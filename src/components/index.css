@@ -1,0 +1,194 @@
+
+html {
+  font-size: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input {
+  margin: 0;
+  font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #343434;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.45rem;
+  font-weight: 300;
+}
+
+.p-large {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+/* Tablets */
+@media only screen and (min-width: 30rem) {
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 65.625rem) {
+  h1 {
+    font-size: 3.1rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Global Attributes */
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.white-modal {
+  background-color: #fff;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px 1px #00000038;
+}
+
+.bg-secondary {
+  background-color: #fafafa;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 3.75rem;
+}
+
+.margin-bottom {
+  margin-bottom: 0.725rem;
+}
+
+.margin-top {
+  margin-top: 0.725rem;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* Global Components */
+
+.button-primary {
+  cursor: pointer;
+  background-color: #f69353;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  padding: 0.575rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: #ee8e4d;
+}
+
+.input-primary {
+  font-size: 1rem;
+  padding: 0.45rem;
+  border-radius: 3px;
+  border: 1px solid #c3c3c3;
+}
+
+/* Desktop Only */
+
+@media only screen and (min-width: 65.625rem) {
+  .hide-on-desktop {
+    display: none;
+  }
+}

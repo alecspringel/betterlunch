@@ -1,0 +1,31 @@
+/* MOBILE*/
+
+.collapse-nav {
+  display: none;
+}
+
+.dropdown-nav {
+  flex-direction: column;
+  align-items: start;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 65.625rem) {
+  /* Navigation Menu */
+  .expand-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .dropdown-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dropdown-margin {
+    margin-left: 0rem;
+  }
+}
