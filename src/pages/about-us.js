@@ -2,6 +2,10 @@ import React from "react"
 import Head from "../components/aboutUs/Head"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HowItWorks from "../components/aboutUs/HowItWorks"
+import ByUs from "../components/aboutUs/ByUs"
+import Fresh from "../components/aboutUs/Fresh"
+import ForYou from "../components/aboutUs/ForYou"
 
 const AboutUs = () => {
   return (
@@ -9,6 +13,10 @@ const AboutUs = () => {
       <SEO title="About Us" />
       <div className="content">
         <Head />
+        <HowItWorks />
+        <ByUs />
+        <Fresh />
+        <ForYou />
       </div>
     </Layout>
   )

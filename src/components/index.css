@@ -91,9 +91,6 @@ a {
   h6 {
     font-size: 1.5rem;
   }
-  p {
-    font-size: 1.25rem;
-  }
 }
 
 /* Large Screens */
@@ -138,6 +135,10 @@ a {
   text-decoration: none;
 }
 
+.padded-section {
+  padding: 3rem 2.5rem;
+}
+
 .content {
   margin-top: 3.75rem;
 }
@@ -150,12 +151,30 @@ a {
   margin-top: 0.725rem;
 }
 
+.shadow {
+  box-shadow: 1px 1px 6px 1px #00000038;
+}
+
+.text-orange {
+  color: #f69353;
+}
+
 .text-bold {
   font-weight: 600;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-1 {

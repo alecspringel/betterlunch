@@ -16,7 +16,7 @@ const Head = () => {
         <h6 className="margin-bottom">
           Proudly serving children in the Las Vegas Valley since 2011, Better
           Lunch has delivered over{" "}
-          <BoldH6>2 million fresh lunches to date.</BoldH6>
+          <span className="text-bold">2 million fresh lunches to date.</span>
         </h6>
         <SignUp />
       </MessageBox>
@@ -48,8 +48,3 @@ const MessageBox = styled.div`
 `
 
 const MainTitle = styled.h1``
-
-const BoldH6 = styled.h6`
-  display: inline;
-  font-weight: 600;
-`
