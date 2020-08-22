@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../general/Button"
-import CornerOrange from "../../static/assets/corner-orange.svg"
+import CornerOrange from "../../assets/corner-orange.svg"
 import Schools from "./Schools"
-import BackgroundImg from "../../static/assets/home-footer.jpg"
+import BackgroundImg from "../../assets/home-footer.jpg"
 
 const Contact = () => {
   return (

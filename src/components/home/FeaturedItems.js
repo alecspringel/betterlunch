@@ -3,35 +3,35 @@ import styled from "styled-components"
 
 const PHOTOS = [
   {
-    path: require("../../static/assets/featured-food/beef-lasagna.jpg"),
+    path: require("../../assets/featured-food/beef-lasagna.jpg"),
     title: "Beef Lasagna",
   },
   {
-    path: require("../../static/assets/featured-food/blt-salad.jpg"),
+    path: require("../../assets/featured-food/blt-salad.jpg"),
     title: "Beef Lasagna",
   },
   {
-    path: require("../../static/assets/featured-food/chicken-korma.jpg"),
+    path: require("../../assets/featured-food/chicken-korma.jpg"),
     title: "Chicken Korma",
   },
   {
-    path: require("../../static/assets/featured-food/taco-salad.jpg"),
+    path: require("../../assets/featured-food/taco-salad.jpg"),
     title: "Taco Salad",
   },
   {
-    path: require("../../static/assets/featured-food/bbq-chicken.jpg"),
+    path: require("../../assets/featured-food/bbq-chicken.jpg"),
     title: "BBQ Chicken",
   },
   {
-    path: require("../../static/assets/featured-food/teryaki-bowl.jpg"),
+    path: require("../../assets/featured-food/teryaki-bowl.jpg"),
     title: "Chicken Teryaki Bowl",
   },
   {
-    path: require("../../static/assets/featured-food/burrito-bowl.jpg"),
+    path: require("../../assets/featured-food/burrito-bowl.jpg"),
     title: "Chicken Korma",
   },
   {
-    path: require("../../static/assets/featured-food/bbq-sandwich.jpg"),
+    path: require("../../assets/featured-food/bbq-sandwich.jpg"),
     title: "BBQ Chicken Sandwich",
   },
 ]

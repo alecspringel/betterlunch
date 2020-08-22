@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import CornerOrange from "../../static/assets/corner-orange-bottomright.svg"
+import CornerOrange from "../../assets/corner-orange-bottomright.svg"
 import Divider from "../general/Divider"
 import Button from "../general/Button"
-import BackgroundImg from "../../static/assets/about-header.jpg"
+import BackgroundImg from "../../assets/about-header.jpg"
 
 const Head = () => {
   return (

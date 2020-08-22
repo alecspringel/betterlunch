@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import Pear from "../../static/assets/pear.svg"
-import Orange from "../../static/assets/orange-whole.svg"
+import Pear from "../../assets/pear.svg"
+import Orange from "../../assets/orange-whole.svg"
 
 const Details = () => {
   return (
@@ -9,7 +9,7 @@ const Details = () => {
       <FlexContainer>
         <BackgroundImg
           style={{ zIndex: -1 }}
-          src={require("../../static/assets/home-about-yogurt.jpg")}
+          src={require("../../assets/home-about-yogurt.jpg")}
           alt="Yogurt Parfait"
         />
         <Description className="flex-1" color="#F8F9FA">
@@ -43,7 +43,7 @@ const Details = () => {
           </p>
         </Description>
         <BackgroundImg
-          src={require("../../static/assets/home-order-online.png")}
+          src={require("../../assets/home-order-online.png")}
           alt="Ordering platform on mobile and laptop devices"
         />
       </FlexContainerReverse>

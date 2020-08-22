@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import "./navigation.css"
-import NavLogo from "../../static/assets/branding/orange-logo-text.svg"
+import NavLogo from "../../assets/branding/orange-logo-text.svg"
 import OrderNowBtn from "./OrderNowBtn"
 import HamburgerNav from "./HamburgerNav"
 import Dropdown from "../general/Dropdown"
@@ -27,59 +27,61 @@ const Navigation = () => {
           </NavItem>
         </RightMobile>
       </MobileNav>
-      <DesktopNav isOpen={isOpen}>
-        <LeftNav className="dropdown-nav">
-          <NavItem className="expand-nav ">
-            <NavLink to="/">Home</NavLink>
-          </NavItem>
-          <NavItem className="collapse-nav expand-nav ">
-            <Dropdown
-              content={<p style={{ fontSize: "1rem" }}>About</p>}
-              options={
-                <>
-                  <DropdownLink
-                    to="/about-us"
-                    label="About Us"
-                    className="no-decoration"
-                  />
-                  <DropdownLink
-                    to="/"
-                    label="News &amp; Updates"
-                    className="no-decoration"
-                  />
-                </>
-              }
-            />
-          </NavItem>
-          <NavItem className="hide-on-desktop">
-            <NavLink to="/about-us" className="">
-              About Us
-            </NavLink>
-          </NavItem>
-          <NavItem className="hide-on-desktop">
-            <NavLink to="/" className="">
-              News and Updates
-            </NavLink>
-          </NavItem>
-          <NavItem className="expand-nav ">
-            <NavLink to="/">FAQ</NavLink>
-          </NavItem>
-          <NavItem className="expand-nav ">
-            <NavLink to="/">Contact Us</NavLink>
-          </NavItem>
-          <NavItem className="hide-on-desktop">
-            <NavLink to="/">Menu Photos</NavLink>
-          </NavItem>
-        </LeftNav>
-        <RightNav className="collapse-nav expand-nav">
-          <NavItem className="collapse-nav expand-nav">
-            <NavLink to="/">Menu Photos</NavLink>
-          </NavItem>
-          <NavItem className="collapse-nav expand-nav">
-            <OrderNowBtn />
-          </NavItem>
-        </RightNav>
-      </DesktopNav>
+      <DropdownWrapper isOpen={isOpen}>
+        <DesktopNav isOpen={isOpen}>
+          <LeftNav className="dropdown-nav">
+            <NavItem className="expand-nav ">
+              <NavLink to="/">Home</NavLink>
+            </NavItem>
+            <NavItem className="collapse-nav expand-nav ">
+              <Dropdown
+                content={<p style={{ fontSize: "1rem" }}>About</p>}
+                options={
+                  <>
+                    <DropdownLink
+                      to="/about-us"
+                      label="About Us"
+                      className="no-decoration"
+                    />
+                    <DropdownLink
+                      to="/"
+                      label="News &amp; Updates"
+                      className="no-decoration"
+                    />
+                  </>
+                }
+              />
+            </NavItem>
+            <NavItem className="hide-on-desktop">
+              <NavLink to="/about-us" className="">
+                About Us
+              </NavLink>
+            </NavItem>
+            <NavItem className="hide-on-desktop">
+              <NavLink to="/" className="">
+                News and Updates
+              </NavLink>
+            </NavItem>
+            <NavItem className="expand-nav ">
+              <NavLink to="/">FAQ</NavLink>
+            </NavItem>
+            <NavItem className="expand-nav ">
+              <NavLink to="/">Contact Us</NavLink>
+            </NavItem>
+            <NavItem className="hide-on-desktop">
+              <NavLink to="/">Menu Photos</NavLink>
+            </NavItem>
+          </LeftNav>
+          <RightNav className="collapse-nav expand-nav">
+            <NavItem className="collapse-nav expand-nav">
+              <NavLink to="/">Menu Photos</NavLink>
+            </NavItem>
+            <NavItem className="collapse-nav expand-nav">
+              <OrderNowBtn />
+            </NavItem>
+          </RightNav>
+        </DesktopNav>
+      </DropdownWrapper>
     </NavBar>
   )
 }
@@ -105,9 +107,23 @@ const NavBar = styled.header`
   }
 `
 
+const DropdownWrapper = styled.div`
+  height: ${props => (props.isOpen ? "20.5625rem" : "0rem")};
+  transition: height 200ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  @media (min-width: 65.625rem) {
+    transition: none;
+    height: auto;
+    overflow: visible;
+  }
+`
+
 const DesktopNav = styled.nav`
   max-width: 78.125rem;
-  height: ${props => (props.isOpen ? "20.5625rem" : "0rem")};
+  /* height: ${props => (props.isOpen ? "20.5625rem" : "0rem")}; */
   transition: height 200ms ease-in-out;
   width: 100%;
   flex-direction: column;
@@ -115,6 +131,7 @@ const DesktopNav = styled.nav`
   display: flex;
   /* display: ${props => (props.isOpen ? "flex" : "none")}; */
   @media (min-width: 65.625rem) {
+    transition: none;
     height: 3.75rem;
     flex-direction: row;
   }

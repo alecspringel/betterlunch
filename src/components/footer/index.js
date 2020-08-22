@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import CircleLogo from "../../static/assets/branding/circle-logo.svg"
-import Facebook from "../../static/assets/facebook.svg"
-import Instagram from "../../static/assets/instagram.svg"
+import CircleLogo from "../../assets/branding/circle-logo.svg"
+import Facebook from "../../assets/facebook.svg"
+import Instagram from "../../assets/instagram.svg"
 
 const Footer = () => {
   return (

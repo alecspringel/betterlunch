@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Divider from "../general/Divider"
 import FeaturedItems from "./FeaturedItems"
 import Button from "../general/Button"
-import BackgroundImg from "../../static/assets/home-featured.jpg"
+import BackgroundImg from "../../assets/home-featured.jpg"
 
 const FeaturedMenu = props => {
   return (

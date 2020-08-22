@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Hamburger from "../../static/assets/hamburger.svg"
+import Hamburger from "../../assets/hamburger.svg"
 
 const HamburgerNav = props => {
   return (
@@ -8,7 +8,7 @@ const HamburgerNav = props => {
       className="mobile-nav"
       onClick={() => props.toggleNav(!props.isOpen)}
     >
-      <Icon src={Hamburger} />
+      <Icon src={Hamburger} alt="Hamburger/mobile navigation icon" />
     </NavButton>
   )
 }

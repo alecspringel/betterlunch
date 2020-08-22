@@ -7,24 +7,24 @@ import "slick-carousel/slick/slick-theme.css"
 
 const LOGOS = [
   {
-    path: require("../../static/assets/schools/challenger.png"),
+    path: require("../../assets/schools/challenger.png"),
     title: "Challenger Logo",
   },
 
   {
-    path: require("../../static/assets/schools/henderson-international.png"),
+    path: require("../../assets/schools/henderson-international.png"),
     title: "Henderson International Logo",
   },
   {
-    path: require("../../static/assets/schools/faith.png"),
+    path: require("../../assets/schools/faith.png"),
     title: "Faith Lutheran Logo",
   },
   {
-    path: require("../../static/assets/schools/lvds.png"),
+    path: require("../../assets/schools/lvds.png"),
     title: "Las Vegas Day School Logo",
   },
   {
-    path: require("../../static/assets/schools/marryhill.png"),
+    path: require("../../assets/schools/marryhill.png"),
     title: "Marryhill Logo",
   },
 ]

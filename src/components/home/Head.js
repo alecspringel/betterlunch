@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Divider from "../general/Divider"
 import SignUp from "../general/SignUp"
-import heroImg from "../../static/assets/home-hero.jpg"
+import heroImg from "../../assets/home-hero.jpg"
 
 const Head = () => {
   return (

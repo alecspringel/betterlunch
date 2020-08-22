@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Orange from "../../static/assets/orange-whole.svg"
+import Orange from "../../assets/orange-whole.svg"
 
 const Blurb = () => {
   return (
