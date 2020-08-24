@@ -6,6 +6,7 @@ import HowItWorks from "../components/aboutUs/HowItWorks"
 import ByUs from "../components/aboutUs/ByUs"
 import Fresh from "../components/aboutUs/Fresh"
 import ForYou from "../components/aboutUs/ForYou"
+import OurTeam from "../components/aboutUs/OurTeam"
 
 const AboutUs = () => {
   return (
@@ -17,6 +18,7 @@ const AboutUs = () => {
         <ByUs />
         <Fresh />
         <ForYou />
+        <OurTeam />
       </div>
     </Layout>
   )

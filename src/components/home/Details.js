@@ -6,7 +6,7 @@ import Orange from "../../assets/orange-whole.svg"
 const Details = () => {
   return (
     <section style={{ overflow: "hidden" }}>
-      <FlexContainer>
+      <FlexContainer className="wrapper">
         <BackgroundImg
           style={{ zIndex: -1 }}
           src={require("../../assets/home-about-yogurt.jpg")}
@@ -27,7 +27,7 @@ const Details = () => {
           </p>
         </Description>
       </FlexContainer>
-      <FlexContainerReverse>
+      <FlexContainerReverse className="wrapper">
         <Description className="flex-1" color="#FEEDD7">
           <OrangeSvg src={Orange} alt="Orange fruit illustration" />
           <h2 className="margin-bottom">Better and easier</h2>
@@ -56,7 +56,6 @@ export default Details
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 124.125rem;
   margin: 30px auto;
   align-items: center;
   @media (min-width: 53.125rem) {

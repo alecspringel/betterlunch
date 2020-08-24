@@ -5,7 +5,7 @@ import Orange from "../../assets/orange-whole.svg"
 const Blurb = () => {
   return (
     <section className="bg-secondary text-center">
-      <Content>
+      <Content className="wrapper">
         <OrangeSvg src={Orange} alt="BetterLunch orange logo" />
         <HeadingH6 className="text-bold">What is BetterLunch?</HeadingH6>
         <BlurbP className="p-large">
