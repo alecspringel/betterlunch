@@ -1,22 +1,26 @@
 import React from "react"
 import styled from "styled-components"
-import MainImg from "../../assets/food-icons.png"
+import MainImg from "../../assets/food-items.png"
 
 const ForYou = () => {
   return (
     <section className="bg-secondary">
       <Flex className="flex padded-section wrapper">
         <TextFlex className="flex-1">
-          <h3>
-            But Most Importantly, Made{" "}
-            <span className="text-orange">For You</span>
+          <h3 className="margin-bottom">
+            But Most Importantly, <HideBreak />
+            Made For You
           </h3>
-          <p>
+          <p className="text-bold margin-bottom text-orange p-large">
+            300+ Menu Combinations, Vegan &amp; Gluten-free Options, and Variety
+            of Portion Sizes
+          </p>
+          <MaxWidthP className="p-large">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd
-          </p>
+          </MaxWidthP>
         </TextFlex>
         <ImageWrapper className="flex-1">
           <LargeImg src={MainImg} />
@@ -31,24 +35,25 @@ export default ForYou
 const Flex = styled.div`
   flex-direction: column-reverse;
   margin: auto;
-  @media (min-width: 43.4375rem) {
+  text-align: center;
+  @media (min-width: 56.25rem) {
     flex-direction: row;
+    text-align: left;
   }
 `
 
 const TextFlex = styled.div`
   flex: 1;
   margin-top: 1.25rem;
-  @media (min-width: 43.4375rem) {
+  @media (min-width: 56.25rem) {
     margin-top: 0;
   }
 `
 
 const LargeImg = styled.img`
-  width: 100%;
+  width: 87%;
   @media (min-width: 43.4375rem) {
     height: 100%;
-    width: auto;
   }
 `
 
@@ -67,4 +72,17 @@ const ImgBackground = styled.div`
   @media (min-width: 43.4375rem) {
     display: block;
   }
+`
+
+const HideBreak = styled.br`
+  @media (max-width: 56.25rem) {
+    display: none;
+  }
+  @media (min-width: 91.25rem) {
+    display: none;
+  }
+`
+
+const MaxWidthP = styled.p`
+  max-width: 46.875rem;
 `

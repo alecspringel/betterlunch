@@ -12,8 +12,8 @@ import annaImg from "../../assets/team/anna.jpg"
 const OurTeam = () => {
   return (
     <section className="wrapper padded-section text-center">
-      <h3>Our Team</h3>
-      <p>
+      <h3 className="margin-bottom">Our Team</h3>
+      <p className="margin-bottom">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod
       </p>
@@ -69,6 +69,9 @@ const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 74.4375rem;
+  margin: auto;
+  margin-top: 2.5rem;
 `
 
 const TeamImg = styled.img`

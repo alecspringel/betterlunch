@@ -2,22 +2,27 @@ import React from "react"
 import styled from "styled-components"
 import MainImg from "../../assets/about-byus-main.jpg"
 import SecondaryImg from "../../assets/about-byus-secondary.jpg"
+import foodBackground from "../../assets/food-icon-background.png"
 
 const ByUs = () => {
   return (
-    <section className="bg-secondary">
+    <section style={{ position: "relative" }} className="bg-secondary">
+      <BackgroundIcons src={foodBackground} />
       <Flex className="flex padded-section wrapper">
         <TextFlex className="flex-1">
-          <h3>
-            Real Delicious Meals, Made{" "}
-            <span className="text-orange">By Us</span>
+          <h3 className="margin-bottom">
+            Real Delicious Meals, <HideBreak />
+            Made By Us
           </h3>
-          <p>
+          <p className="text-bold margin-bottom text-orange p-large">
+            Meals are prepared and delivered by our full-time, 30+ kitchen staff
+          </p>
+          <MaxWidthP className="p-large">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd
-          </p>
+          </MaxWidthP>
         </TextFlex>
         <ImageWrapper className="flex-1">
           <LargeImg className="shadow" src={MainImg} />
@@ -35,7 +40,7 @@ export default ByUs
 const Flex = styled.div`
   flex-direction: column-reverse;
   margin: auto;
-  @media (min-width: 43.4375rem) {
+  @media (min-width: 56.25rem) {
     flex-direction: row;
   }
 `
@@ -43,8 +48,12 @@ const Flex = styled.div`
 const TextFlex = styled.div`
   flex: 1;
   margin-top: 1.25rem;
-  @media (min-width: 43.4375rem) {
+  text-align: center;
+  background: #fafafa;
+  z-index: 2;
+  @media (min-width: 56.25rem) {
     margin-top: 0;
+    text-align: left;
   }
 `
 
@@ -76,5 +85,33 @@ const ImgBackground = styled.div`
   width: 30%;
   @media (min-width: 43.4375rem) {
     display: block;
+  }
+`
+
+const HideBreak = styled.br`
+  @media (max-width: 56.25rem) {
+    display: none;
+  }
+  @media (min-width: 91.25rem) {
+    display: none;
+  }
+`
+
+const MaxWidthP = styled.p`
+  max-width: 46.875rem;
+`
+
+const BackgroundIcons = styled.img`
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  left: 0;
+  border-bottom-left-radius: 0;
+  max-width: 30rem;
+  top: 0;
+  display: none;
+  @media (min-width: 56.25rem) {
+    display: block;
+    width: 30%;
   }
 `

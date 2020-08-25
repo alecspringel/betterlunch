@@ -63,10 +63,10 @@ const Navigation = () => {
               </NavLink>
             </NavItem>
             <NavItem className="expand-nav ">
-              <NavLink to="/">FAQ</NavLink>
+              <NavLink to="/faq">FAQ</NavLink>
             </NavItem>
             <NavItem className="expand-nav ">
-              <NavLink to="/">Contact Us</NavLink>
+              <NavLink to="/contact">Contact Us</NavLink>
             </NavItem>
             <NavItem className="hide-on-desktop">
               <NavLink to="/">Menu Photos</NavLink>
@@ -91,7 +91,7 @@ export default Navigation
 const NavBar = styled.header`
   position: fixed;
   overflow: hidden;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   width: 100vw;
   display: flex;

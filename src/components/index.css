@@ -140,15 +140,23 @@ a {
 }
 
 .padded-section {
-  padding: 3rem 2.5rem;
+  padding: 4rem 2.5rem;
 }
 
 .content {
   margin-top: 3.75rem;
 }
 
+.l-margin-bottom {
+  margin-top: 1.725rem;
+}
+
 .margin-bottom {
   margin-bottom: 0.725rem;
+}
+
+.l-margin-top {
+  margin-top: 1.725rem;
 }
 
 .margin-top {

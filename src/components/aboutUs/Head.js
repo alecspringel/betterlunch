@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import CornerOrange from "../../assets/corner-orange-bottomright.svg"
+import Pear from "../../assets/pear.svg"
 import Divider from "../general/Divider"
 import Button from "../general/Button"
 import BackgroundImg from "../../assets/about-header.jpg"
@@ -10,6 +11,7 @@ const Head = () => {
     <Flex>
       <Image className="flex-1" />
       <Background className="bg-secondary flex-1">
+        <img src={Pear} alt="Decorative orange slice" />
         <Orange src={CornerOrange} alt="Decorative orange slice" />
       </Background>
       <FlexOverlay>
