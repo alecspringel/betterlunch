@@ -44,7 +44,7 @@ const Flex = styled.div`
 `
 
 const TextWrapper = styled.div`
-  background: #fff;
+  background: #ffffff61;
   width: fit-content;
   display: inline-block;
 `
@@ -101,7 +101,6 @@ const MaxWidthP = styled.p`
 
 const BackgroundIcons = styled.img`
   position: absolute;
-  opacity: 0.7;
   padding: 10px;
   width: 100%;
   right: 0;

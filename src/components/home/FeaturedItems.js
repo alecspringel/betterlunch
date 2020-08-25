@@ -43,9 +43,7 @@ const FeaturedItems = () => {
           <FoodItem>
             <FoodImg src={photo.path} alt={photo.title} />
             <Caption>
-              <FoodTitle className="text-center text-bold">
-                {photo.title}
-              </FoodTitle>
+              <p className="text-center">{photo.title}</p>
             </Caption>
           </FoodItem>
         ))}
@@ -70,10 +68,6 @@ const FoodItem = styled.li`
   flex: 0 0 12.8125rem;
   display: inline-block;
   margin: 0 1rem 2rem 1rem;
-`
-
-const FoodTitle = styled.p`
-  color: #777777;
 `
 
 const FoodImg = styled.img`
