@@ -1,5 +1,4 @@
 import React from "react"
-import { useMediaQuery } from "react-responsive"
 import styled from "styled-components"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -30,29 +29,37 @@ const LOGOS = [
 ]
 
 const Schools = () => {
-  const isMobile = useMediaQuery({ maxDeviceWidth: 760 })
-  const isDesktop = useMediaQuery({ minDeviceWidth: 1200 })
-  const isWide = useMediaQuery({ minDeviceWidth: 1800 })
-
-  var slidesToShow = 1
-  var centerMode = true
-  if (!isMobile) {
-    slidesToShow = 2
-    centerMode = false
-  }
-  if (isDesktop) {
-    slidesToShow = 3
-  }
-  if (isWide) {
-    slidesToShow = 4
-  }
-
-  console.log(slidesToShow)
   var settings = {
     dots: false,
-    slidesToShow,
+    slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        },
+      },
+      {
+        breakpoint: 1800,
+        settings: {
+          slidesToShow: 4,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        },
+      },
+    ],
   }
   return (
     <Slider {...settings}>

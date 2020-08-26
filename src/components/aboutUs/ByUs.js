@@ -49,7 +49,7 @@ const TextFlex = styled.div`
   flex: 1;
   margin-top: 1.25rem;
   text-align: center;
-  background: #fafafa;
+  background: #fafafa87;
   z-index: 2;
   @media (min-width: 56.25rem) {
     margin-top: 0;

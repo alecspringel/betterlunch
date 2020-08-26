@@ -90,6 +90,10 @@ a {
   h6 {
     font-size: 1.5rem;
   }
+  .wide-btn {
+    width: 300px;
+    display: inline-block;
+  }
 }
 
 /* Large Screens */
@@ -167,6 +171,10 @@ a {
   box-shadow: 1px 1px 6px 1px #00000038;
 }
 
+.text-narrow {
+  max-width: 68.75rem;
+}
+
 .text-orange {
   color: #f69353;
 }
@@ -206,6 +214,11 @@ a {
   border-radius: 3px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
+}
+
+.wide-btn {
+  width: 200px;
+  display: inline-block;
 }
 
 .button-primary:hover {
