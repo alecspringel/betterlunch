@@ -6,9 +6,8 @@ import foodBackground from "../../assets/food-icon-background.png"
 
 const FeaturedMenu = props => {
   return (
-    <Background className="bg-secondary text-center">
+    <Background className="bg-secondary text-center padded-section">
       <BackgroundIcons src={foodBackground} />
-
       <Content>
         <h2 className="margin-bottom">Featured This Month</h2>
         <p className="margin-bottom text-narrow">
@@ -38,8 +37,6 @@ const Background = styled.section`
 const Content = styled.div`
   width: auto;
   margin: auto;
-  margin: 20px;
-  padding: 40px;
   min-width: 0;
   background: #fafafa87;
   z-index: 1;

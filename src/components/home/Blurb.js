@@ -4,6 +4,7 @@ import Orange from "../../assets/orange-whole.svg"
 import FlexibleIcon from "../../assets/flexible-icons.svg"
 import ForYouIcon from "../../assets/for-you-icons.svg"
 import FreshIcon from "../../assets/fresh-icons.svg"
+import Button from "../general/Button"
 
 const Blurb = () => {
   return (
@@ -19,29 +20,31 @@ const Blurb = () => {
         <FlexIcons>
           <Container>
             <Icons src={FlexibleIcon} alt="BetterLunch orange logo" />
-            <h6 className="text-bold margin-bottom">Flexible Ordering</h6>
+            <p className="text-bold margin-bottom p-large mont">
+              Flexible Ordering
+            </p>
             <ConfinedP>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed{" "}
             </ConfinedP>
           </Container>
           <Container>
             <Icons src={ForYouIcon} alt="BetterLunch orange logo" />
-            <h6 className="text-bold margin-bottom">Made For You</h6>
+            <p className="text-bold margin-bottom p-large mont">Made For You</p>
             <ConfinedP>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed{" "}
             </ConfinedP>
           </Container>
           <Container>
             <Icons src={FreshIcon} alt="BetterLunch orange logo" />
-            <h6 className="text-bold margin-bottom">Always Fresh</h6>
+            <p className="text-bold margin-bottom p-large mont">Always Fresh</p>
             <ConfinedP>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed{" "}
             </ConfinedP>
           </Container>
         </FlexIcons>
-        <LearnMoreBtn className="wide-btn button-primary">
+        <Button className="wide-btn primary-btn" style={{ marginTop: 80 }}>
           Learn More
-        </LearnMoreBtn>
+        </Button>
       </Content>
     </section>
   )
@@ -50,10 +53,9 @@ const Blurb = () => {
 export default Blurb
 
 const Content = styled.div`
-  padding: 80px 40px;
-  box-shadow: 0px 4px 7px 3px #00000008;
   overflow: visible;
   position: relative;
+  padding: 9rem 2.5rem;
 `
 
 const Icons = styled.img`
@@ -84,11 +86,7 @@ const Container = styled.div`
   }
 `
 
-const LearnMoreBtn = styled.div`
-  display: inline-block;
-  margin-top: 5rem;
-`
-
 const ConfinedP = styled.p`
   max-width: 23.125rem;
+  margin: auto;
 `

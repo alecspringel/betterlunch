@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/orange-whole.svg`, // This path is relative to the root of the site.
+        // icon: `src/assets/orange-whole.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -34,7 +34,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["Montserrat"],
+          families: ["Montserrat", "Lato"],
           urls: ["fonts.css"],
         },
       },

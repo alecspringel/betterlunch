@@ -31,14 +31,15 @@ const LOGOS = [
 const Schools = () => {
   var settings = {
     dots: false,
-    slidesToShow: 1,
+    slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 760,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           autoplay: true,
           autoplaySpeed: 3000,
         },
@@ -46,7 +47,7 @@ const Schools = () => {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           autoplay: true,
           autoplaySpeed: 3000,
         },
@@ -54,7 +55,7 @@ const Schools = () => {
       {
         breakpoint: 1800,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           autoplay: true,
           autoplaySpeed: 3000,
         },

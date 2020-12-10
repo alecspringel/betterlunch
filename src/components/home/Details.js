@@ -2,22 +2,24 @@ import React from "react"
 import styled from "styled-components"
 import Pear from "../../assets/pear.svg"
 import Orange from "../../assets/orange-whole.svg"
+import DetailHead from "./DetailHead"
 
 const Details = () => {
   return (
-    <section style={{ overflow: "hidden" }}>
-      <FlexContainer className="wrapper">
+    <section className="padded-section" style={{ overflow: "hidden" }}>
+      <DetailHead />
+      <FlexContainer>
         <BackgroundImg
           style={{ zIndex: -1 }}
           src={require("../../assets/home-about-yogurt.jpg")}
           alt="Yogurt Parfait"
         />
-        <Description className="flex-1" color="#F8F9FA">
+        <Description className="flex-1">
           <PearSvg src={Pear} alt="Pear fruit illustration" />
-          <h2 className="margin-bottom">Did we mention fresh?</h2>
-          <Tagline className="text-bold p-large" bg="#D9E1EB">
+          <h3 className="margin-bottom">Did we mention fresh?</h3>
+          <p className="text-bold p-large text-orange margin-bottom">
             Meals made fresh daily
-          </Tagline>
+          </p>
           <p className="margin-bottom">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -27,13 +29,13 @@ const Details = () => {
           </p>
         </Description>
       </FlexContainer>
-      <FlexContainerReverse className="wrapper">
-        <Description className="flex-1" color="#FEEDD7">
+      <FlexContainerReverse>
+        <Description className="flex-1">
           <OrangeSvg src={Orange} alt="Orange fruit illustration" />
-          <h2 className="margin-bottom">Better and easier</h2>
-          <Tagline className="text-bold p-large" bg="#F69353" color="#fff">
+          <h3 className="margin-bottom">Better and easier</h3>
+          <p className="text-bold p-large text-orange margin-bottom">
             Order online ahead of time
-          </Tagline>
+          </p>
           <p className="margin-bottom">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -58,6 +60,7 @@ const FlexContainer = styled.div`
   flex-direction: column;
   margin: 30px auto;
   align-items: center;
+  max-width: 80rem;
   @media (min-width: 53.125rem) {
     flex-direction: row;
   }
@@ -82,21 +85,13 @@ const BackgroundImg = styled.img`
 `
 
 const Description = styled.div`
-  background-color: ${props => props.color};
+  background-color: #fff;
   margin: 0 20px;
   padding: 30px;
   height: fit-content;
   box-shadow: 1px 1px 6px 1px #00000038;
   position: relative;
   border-radius: 3px;
-`
-
-const Tagline = styled.p`
-  background-color: ${props => props.bg};
-  padding: 0.3rem;
-  display: inline-block;
-  margin-bottom: 20px;
-  color: ${props => props.color};
 `
 
 const PearSvg = styled.img`
