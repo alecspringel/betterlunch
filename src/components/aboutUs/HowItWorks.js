@@ -1,6 +1,6 @@
 import React from "react"
-import OrderImg from "../../assets/order-icon.svg"
-import CookingImg from "../../assets/cooking-icon.svg"
+import OrderImg from "../../assets/shop-icon.svg"
+import CookingImg from "../../assets/prepare-icon.svg"
 import DeliverImg from "../../assets/deliver-icon.svg"
 import styled from "styled-components"
 
@@ -8,7 +8,7 @@ const HowItWorks = () => {
   return (
     <section className="text-center padded-section">
       <h3>How it Works</h3>
-      <Wrapper className="flex">
+      <Wrapper className="flex-row">
         <StepWrapper className="flex-1">
           <Icon
             src={OrderImg}

@@ -4,12 +4,12 @@ import CornerOrange from "../../assets/corner-orange-bottomright.svg"
 import Pear from "../../assets/pear.svg"
 import Divider from "../general/Divider"
 import Button from "../general/Button"
-import BackgroundImg from "../../assets/about-header.jpg"
+import BackgroundImg from "../../assets/about-hero.jpg"
 
 const Head = () => {
   return (
     <Flex>
-      <Image className="flex-1" />
+      {/* <Image className="flex-1" />
       <Background className="bg-secondary flex-1">
         <img src={Pear} alt="Decorative orange slice" />
         <Orange src={CornerOrange} alt="Decorative orange slice" />
@@ -25,7 +25,7 @@ const Head = () => {
           </h6>
           <Button label="Ask Us A Question" />
         </Content>
-      </FlexOverlay>
+      </FlexOverlay> */}
     </Flex>
   )
 }
@@ -36,6 +36,11 @@ const Flex = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url(${BackgroundImg});
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: cover;
+  height: 37rem;
   @media (min-width: 65.625rem) {
     flex-direction: row;
   }

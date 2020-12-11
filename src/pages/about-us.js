@@ -16,8 +16,8 @@ const AboutUs = () => {
         <Head />
         <HowItWorks />
         <ByUs />
-        <Fresh />
-        <ForYou />
+        {/* <Fresh />
+        <ForYou /> */}
         <OurTeam />
       </div>
     </Layout>

@@ -2,14 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import MainImg from "../../assets/about-byus-main.jpg"
 import SecondaryImg from "../../assets/about-byus-secondary.jpg"
-import foodBackground from "../../assets/food-icon-background.png"
 
 const ByUs = () => {
   return (
-    <section style={{ position: "relative" }} className="bg-secondary">
-      <BackgroundIcons src={foodBackground} />
-      <Flex className="flex padded-section wrapper">
-        <TextFlex className="flex-1">
+    <section style={{ position: "relative" }} className="bg-tan">
+      <Flex className="flex-row padded-section wrapper">
+        <TextFlex className="flex-1 align justify">
           <h3 className="margin-bottom">
             Real Delicious Meals, <HideBreak />
             Made By Us
