@@ -1,22 +1,25 @@
-import React from "react";
-import styled from "styled-components";
-import Button from "./Button";
+import React from "react"
+import styled from "styled-components"
+import Button from "./Button"
 
-const SignUp = () => {
+const EmailInput = () => {
   return (
     <SignUpForm>
       <input
         type="email"
         placeholder="hello@mybetterlunch.com"
         className="input-primary flex-1"
+        style={{ width: 600 }}
       />
       <Spacing />
-      <Button label="Learn More" />
+      <Button className="primary-btn" style={{ width: 200 }}>
+        Subscribe
+      </Button>
     </SignUpForm>
-  );
-};
+  )
+}
 
-export default SignUp;
+export default EmailInput
 
 const SignUpForm = styled.div`
   display: flex;
@@ -24,8 +27,8 @@ const SignUpForm = styled.div`
   @media (min-width: 65.625rem) {
     flex-direction: row;
   }
-`;
+`
 
 const Spacing = styled.div`
   flex: 0 0 10px;
-`;
+`

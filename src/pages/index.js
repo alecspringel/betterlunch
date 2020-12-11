@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import OurStory from "../components/home/OurStory"
 import OurMenu from "../components/home/OurMenu"
+import SignUp from "../components/home/SignUp"
 
 class Home extends Component {
   render() {
@@ -18,6 +19,7 @@ class Home extends Component {
           <Blurb />
           <OurStory />
           <OurMenu />
+          <SignUp />
         </div>
       </Layout>
     )

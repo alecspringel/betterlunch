@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Divider from "../general/Divider"
-import SignUp from "../general/SignUp"
 import WaveSVG from "../../assets/home-waves.svg"
 import HeroImg from "../../assets/cropped-header.png"
 import Button from "../general/Button"

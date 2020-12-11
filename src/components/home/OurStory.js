@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import ChildPhoto from "../../assets/child-eating.jpg"
+import SignatureSvg from "../../assets/signature.svg"
+import Divider from "../general/Divider"
 
 const OurStory = () => {
   return (
@@ -41,6 +43,14 @@ const OurStory = () => {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam
               </p>
+              <div className="flex-row align" style={{ marginTop: 60 }}>
+                <Divider style={{ marginRight: 20 }} />
+                <SignatureImg src={SignatureSvg} />
+                <div className="flex-col" style={{ marginLeft: 20 }}>
+                  <p className="text-bold p-large mont">Stephanie Springel</p>
+                  <p className="p-large mont">Founder of BetterLunch</p>
+                </div>
+              </div>
             </TextWrapper>
           </div>
         </div>
@@ -68,4 +78,8 @@ const TextWrapper = styled.div`
   z-index: 1;
   margin-left: 50px;
   line-height: 35px;
+`
+
+const SignatureImg = styled.img`
+  height: 50px;
 `
