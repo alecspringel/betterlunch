@@ -61,7 +61,7 @@ const Content = styled.div`
 const Icons = styled.img`
   height: 8rem;
   @media (min-width: 59.375rem) {
-    height: 10rem;
+    height: 13rem;
   }
 `
 

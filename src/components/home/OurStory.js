@@ -13,7 +13,7 @@ const OurStory = () => {
           className="text-orange margin-t10 text-center"
           style={{ marginBottom: 70 }}
         >
-          One child at a time
+          One meal at a time
         </h6>
         <div className="flex-row">
           <ImageWrapper>

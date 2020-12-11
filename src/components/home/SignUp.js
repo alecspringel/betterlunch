@@ -11,13 +11,22 @@ const SignUp = () => {
         <h5 className="margin-b20">See why parents love BetterLunch</h5>
         <p
           className="p-large text-center space-text"
-          style={{ maxWidth: 1000, marginBottom: 40 }}
+          style={{ maxWidth: 800, marginBottom: 40 }}
         >
           BetterLunch is always adding new items to the menu and serving up new
           opportunities in our community. Join the newsletter to stay up to date
           on all we offer.
         </p>
         <EmailInput />
+        <p className="margin-t20">
+          Ready to place your first order?{" "}
+          <a
+            className="text-underline text-orange"
+            style={{ cursor: "pointer" }}
+          >
+            Sign up here.
+          </a>
+        </p>
       </div>
     </SectionWrapper>
   )
@@ -31,5 +40,5 @@ const SectionWrapper = styled.section`
 
 const Icon = styled.img`
   height: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `
