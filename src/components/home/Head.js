@@ -89,8 +89,8 @@ const MessageBox = styled.div`
 `
 
 const SchoolWrapper = styled.section`
-  height: calc(25vh - 60px);
+  height: 300px;
   overflow: hidden;
-  padding: 37px 0;
+  padding: 68px 0;
   box-shadow: 0 0 6px #00000016;
 `

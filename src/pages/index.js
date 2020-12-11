@@ -6,6 +6,7 @@ import Contact from "../components/home/Contact"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import OurStory from "../components/home/OurStory"
+import OurMenu from "../components/home/OurMenu"
 
 class Home extends Component {
   render() {
@@ -16,8 +17,7 @@ class Home extends Component {
           <Head />
           <Blurb />
           <OurStory />
-          <Details />
-          <Contact />
+          <OurMenu />
         </div>
       </Layout>
     )

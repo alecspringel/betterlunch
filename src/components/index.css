@@ -221,6 +221,10 @@ a {
   font-weight: 400;
 }
 
+.space-text {
+  line-height: 30px;
+}
+
 .text-narrow {
   max-width: 68.75rem;
   margin: auto;
