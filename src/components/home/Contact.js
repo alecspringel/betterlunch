@@ -18,9 +18,6 @@ const Contact = () => {
           <Button label="Contact Us" />
         </Modal>
       </Background>
-      <SchoolContainer>
-        <Schools />
-      </SchoolContainer>
     </>
   )
 }
@@ -50,12 +47,4 @@ const Orange = styled.img`
   position: absolute;
   top: 0;
   right: 0;
-`
-
-const SchoolContainer = styled.div`
-  padding: 20px;
-  background: #fafafa;
-  overflow: hidden;
-  border-bottom: 1px solid #dfdfdf;
-  padding: 30px 20px;
 `

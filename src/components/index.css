@@ -56,6 +56,16 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 h6 {
   font-size: 1.45rem;
   font-weight: 400;
@@ -139,6 +149,10 @@ a {
 
 .bg-secondary {
   background-color: #fafafa;
+}
+
+.bg-tan {
+  background-color: #f7f6f4;
 }
 
 .no-decoration {
@@ -228,9 +242,20 @@ a {
   text-align: right;
 }
 
-.flex {
+.flex-row {
   display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify {
   justify-content: center;
+}
+
+.align {
   align-items: center;
 }
 

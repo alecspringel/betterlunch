@@ -8,7 +8,7 @@ import Button from "../general/Button"
 
 const Blurb = () => {
   return (
-    <section className="text-center shadow">
+    <section className="text-center">
       <Content className="wrapper">
         <h3 className="text-bold margin-bottom">What is BetterLunch?</h3>
         <BlurbP className="p-large text-narrow">
