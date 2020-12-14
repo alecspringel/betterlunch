@@ -7,7 +7,7 @@ const ByUs = () => {
   return (
     <section style={{ position: "relative" }} className="bg-tan">
       <Flex className="flex-row padded-section wrapper">
-        <TextFlex className="flex-1 align justify">
+        <TextFlex className="flex-col justify">
           <h3 className="margin-bottom">
             Real Delicious Meals, <HideBreak />
             Made By Us
