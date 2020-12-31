@@ -234,6 +234,10 @@ a {
   margin: auto;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .text-orange {
   color: #f69353;
 }

@@ -9,13 +9,19 @@ import BackgroundImg from "../../assets/about-head.jpg"
 const Head = () => {
   return (
     <Flex>
-      <TextWrapper>
-        <Heading>
-          Real Delicious Meals,
-          <br /> Made Fresh
-        </Heading>
-        <Button className="primary-btn margin-t20">Do Something</Button>
-      </TextWrapper>
+      <div className="flex-1"></div>
+      <div className="flex-1 flex-row align justify">
+        <TextWrapper>
+          <Heading>
+            Real Delicious Meals,
+            <br /> Made Fresh
+          </Heading>
+          <p className="p-large text-white margin-t10">
+            Lorem ipsum dolor sit amet, consetetur sadipscing{" "}
+          </p>
+          <Button className="primary-btn margin-t20">Do Something</Button>
+        </TextWrapper>
+      </div>
     </Flex>
   )
 }
@@ -39,5 +45,4 @@ const Heading = styled.h2`
 
 const TextWrapper = styled.div`
   align-self: center;
-  margin-right: 50px;
 `
