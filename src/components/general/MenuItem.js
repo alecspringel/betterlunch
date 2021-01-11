@@ -6,7 +6,7 @@ const MenuItem = ({ img, title, description }) => {
     <Wrapper>
       <FoodImg src={img} />
       <TextWrapper>
-        <Title className="p-large text-bold">{title}</Title>
+        <Title className="p-large text-bold mont">{title}</Title>
         <p>{description}</p>
       </TextWrapper>
     </Wrapper>

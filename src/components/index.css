@@ -299,8 +299,8 @@ a {
 
 .primary-line {
   color: #f69353;
-  background-color: #fff;
   border: 2px solid #f69353;
+  padding: calc(0.775rem - 2px) 0.775rem;
 }
 
 .wide-btn {

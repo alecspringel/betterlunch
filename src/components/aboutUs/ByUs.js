@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import MainImg from "../../assets/about-byus-main.jpg"
 import SecondaryImg from "../../assets/about-byus-secondary.jpg"
+import Button from "../general/Button"
 
 const ByUs = () => {
   return (
@@ -21,12 +22,18 @@ const ByUs = () => {
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd
           </MaxWidthP>
+          <p className="margin-t20">Have questions about our program?</p>
+          <div className="margin-t20">
+            <Button
+              className="button primary-btn"
+              style={{ width: 200, marginRight: 10 }}
+            >
+              FAQ
+            </Button>
+          </div>
         </TextFlex>
         <ImageWrapper className="flex-1">
           <LargeImg className="shadow" src={MainImg} />
-          <ImgBackground className="bg-secondary">
-            <SmallImg className="shadow" src={SecondaryImg} />
-          </ImgBackground>
         </ImageWrapper>
       </Flex>
     </section>
@@ -47,7 +54,6 @@ const TextFlex = styled.div`
   flex: 1;
   margin-top: 1.25rem;
   text-align: center;
-  background: #fafafa87;
   z-index: 2;
   @media (min-width: 56.25rem) {
     margin-top: 0;
@@ -62,28 +68,9 @@ const LargeImg = styled.img`
   }
 `
 
-const SmallImg = styled.img`
-  width: 100%;
-`
-
 const ImageWrapper = styled.div`
   text-align: center;
   position: relative;
-  @media (min-width: 43.4375rem) {
-    padding-bottom: 3.125rem;
-  }
-`
-
-const ImgBackground = styled.div`
-  display: none;
-  padding: 5px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 30%;
-  @media (min-width: 43.4375rem) {
-    display: block;
-  }
 `
 
 const HideBreak = styled.br`

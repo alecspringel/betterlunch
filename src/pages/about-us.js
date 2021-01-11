@@ -9,6 +9,7 @@ import ForYou from "../components/aboutUs/ForYou"
 import OurTeam from "../components/aboutUs/OurTeam"
 import Features from "../components/aboutUs/Features"
 import Menu from "../components/aboutUs/Menu"
+import Footer from "../components/aboutUs/Footer"
 
 const AboutUs = () => {
   return (
@@ -21,6 +22,7 @@ const AboutUs = () => {
         <Menu />
         <ByUs />
         <OurTeam />
+        <Footer />
       </div>
     </Layout>
   )
