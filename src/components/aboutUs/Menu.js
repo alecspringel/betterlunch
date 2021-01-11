@@ -64,4 +64,10 @@ const MenuWrapper = styled.div`
   max-width: 1000px;
   justify-content: center;
   padding: 20px 0;
+  @media (max-width: 45rem) {
+    flex-wrap: nowrap;
+    justify-content: normal;
+    overflow-x: scroll;
+    max-width: none;
+  }
 `

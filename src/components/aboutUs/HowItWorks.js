@@ -10,12 +10,12 @@ const HowItWorks = () => {
       <h4 className="text-orange">HOW IT WORKS</h4>
       <p className="p-large margin-t10">Change Text</p>
       <Wrapper className="flex-col justify">
-        <div className="flex-row align">
+        <FlexWrapper className="flex-row align">
           <LeftHalf>
             <Image src={OrderImg} />
           </LeftHalf>
           <RightHalf>
-            <TextWrapper>
+            <TextWrapper extraSpace>
               <h5>1. Sign in online or with mobile</h5>
               <p className="p-large margin-t10">
                 Proudly serving children in the Las Vegas Valley since 2011,
@@ -23,8 +23,8 @@ const HowItWorks = () => {
               </p>
             </TextWrapper>
           </RightHalf>
-        </div>
-        <div className="flex-row align">
+        </FlexWrapper>
+        <FlexWrapper className="flex-row align" reverse>
           <LeftHalf>
             <LeftTextWrapper>
               <h5>2. Customize &amp; choose your meals</h5>
@@ -37,8 +37,8 @@ const HowItWorks = () => {
           <RightHalf>
             <Image src={CustomizeImg} />
           </RightHalf>
-        </div>
-        <div className="flex-row align">
+        </FlexWrapper>
+        <FlexWrapper className="flex-row align">
           <LeftHalf>
             <Image src={WorkingImg} />
           </LeftHalf>
@@ -51,7 +51,7 @@ const HowItWorks = () => {
               </p>
             </TextWrapper>
           </RightHalf>
-        </div>
+        </FlexWrapper>
       </Wrapper>
     </section>
   )
@@ -71,6 +71,10 @@ const Image = styled.img`
 const TextWrapper = styled.div`
   max-width: 500px;
   text-align: left;
+  @media (max-width: 53.75rem) {
+    text-align: center;
+    margin: ${props => props.extraSpace && "30px"};
+  }
 `
 
 const LeftTextWrapper = styled(TextWrapper)`
@@ -88,4 +92,10 @@ const RightHalf = styled(HalfDiv)`
 
 const LeftHalf = styled(HalfDiv)`
   text-align: right;
+`
+
+const FlexWrapper = styled.div`
+  @media (max-width: 53.75rem) {
+    flex-direction: ${props => (props.reverse ? "column-reverse" : "column")};
+  }
 `

@@ -7,7 +7,9 @@ import TimerImg from "../../assets/timer-blue.svg"
 const Features = () => {
   return (
     <Background className="padded-section">
-      <div className="flex-row" style={{ maxWidth: "84rem" }}>
+      {/* <div className="flex-col"> */}
+      {/* <h6 className="text-blue text-bold text-center">WHY BETTERLUNCH?</h6> */}
+      <FlexDiv className="flex-row" style={{ maxWidth: "84rem" }}>
         <Item>
           <Icon src={CancelImg} className="margin-b10" />
           <h6 className="margin-b10 text-blue text-bold">Cancel Anytime</h6>
@@ -37,7 +39,8 @@ const Features = () => {
             Order up to 8AM same day.
           </p>
         </Item>
-      </div>
+      </FlexDiv>
+      {/* </div> */}
     </Background>
   )
 }
@@ -51,8 +54,18 @@ const Background = styled.section`
 const Item = styled.div`
   flex: 1;
   text-align: center;
+  @media (max-width: 53.75rem) {
+    margin: 30px 0;
+  }
 `
 
 const Icon = styled.img`
   height: 40px;
+`
+
+const FlexDiv = styled.div`
+  margin: auto;
+  @media (max-width: 53.75rem) {
+    flex-direction: column;
+  }
 `

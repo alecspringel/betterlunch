@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   width: 285px;
   box-shadow: 0px 3px 6px #c3c3c3;
   margin: 15px;
+  flex-shrink: 0;
 `
 
 const TextWrapper = styled.div`
