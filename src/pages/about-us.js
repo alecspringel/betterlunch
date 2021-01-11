@@ -7,6 +7,8 @@ import ByUs from "../components/aboutUs/ByUs"
 import Fresh from "../components/aboutUs/Fresh"
 import ForYou from "../components/aboutUs/ForYou"
 import OurTeam from "../components/aboutUs/OurTeam"
+import Features from "../components/aboutUs/Features"
+import Menu from "../components/aboutUs/Menu"
 
 const AboutUs = () => {
   return (
@@ -15,9 +17,9 @@ const AboutUs = () => {
       <div className="content">
         <Head />
         <HowItWorks />
+        <Features />
+        <Menu />
         <ByUs />
-        {/* <Fresh />
-        <ForYou /> */}
         <OurTeam />
       </div>
     </Layout>

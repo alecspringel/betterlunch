@@ -1,0 +1,58 @@
+import React from "react"
+import styled from "styled-components"
+import CancelImg from "../../assets/cancel-blue.svg"
+import CalendarImg from "../../assets/calendar-blue.svg"
+import TimerImg from "../../assets/timer-blue.svg"
+
+const Features = () => {
+  return (
+    <Background className="padded-section">
+      <div className="flex-row" style={{ maxWidth: "84rem" }}>
+        <Item>
+          <Icon src={CancelImg} className="margin-b10" />
+          <h6 className="margin-b10 text-blue text-bold">Cancel Anytime</h6>
+          <p className="p-large">
+            Pause or cancel deliveries at
+            <br />
+            anytime.
+          </p>
+        </Item>
+        <Item>
+          <Icon src={CalendarImg} className="margin-b10" />
+          <h6 className="margin-b10 text-blue text-bold">Flexible Ordering</h6>
+          <p className="p-large">
+            Pick and choose the days
+            <br />
+            you want BetterLunch.
+          </p>
+        </Item>
+        <Item>
+          <Icon src={TimerImg} className="margin-b10" />
+          <h6 className="margin-b10 text-blue text-bold">
+            Last Minute Options
+          </h6>
+          <p className="p-large">
+            Forget to pack a lunch?
+            <br />
+            Order up to 8AM same day.
+          </p>
+        </Item>
+      </div>
+    </Background>
+  )
+}
+
+export default Features
+
+const Background = styled.section`
+  background-color: #dbeaec;
+`
+
+const Item = styled.div`
+  flex: 1;
+  text-align: center;
+`
+
+const Icon = styled.img`
+  height: 40px;
+`
