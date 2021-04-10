@@ -9,13 +9,13 @@ const OurStory = () => {
     <section className="bg-tan" style={{ padding: "7rem 2.5rem" }}>
       <div className="wrapper flex-col justify" style={{ maxWidth: "86rem" }}>
         <h3 className="text-center">Feeding our Future</h3>
-        <h6
-          className="text-orange margin-t10 text-center"
+        <p
+          className="text-orange margin-t10 text-center lato text-bold"
           style={{ marginBottom: 70 }}
         >
           One meal at a time
-        </h6>
-        <div className="flex-row">
+        </p>
+        <Content className="flex-row">
           <ImageWrapper>
             <Image src={ChildPhoto} />
           </ImageWrapper>
@@ -53,13 +53,21 @@ const OurStory = () => {
               </div>
             </TextWrapper>
           </div>
-        </div>
+        </Content>
       </div>
     </section>
   )
 }
 
 export default OurStory
+
+const Content = styled.div`
+  @media (max-width: 855px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+`
 
 const ImageWrapper = styled.div`
   width: 50%;
@@ -71,6 +79,9 @@ const Image = styled.img`
   border-radius: 4px;
   width: 100%;
   box-shadow: 0 5px 15px rgb(148 142 126 / 20%);
+  @media (max-width: 855px) {
+    margin-bottom: 35px;
+  }
 `
 
 const TextWrapper = styled.div`

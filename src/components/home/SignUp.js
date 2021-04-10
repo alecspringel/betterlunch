@@ -1,12 +1,15 @@
 import React from "react"
 import styled from "styled-components"
-import EmailInput from "../general/EmailInput"
+import EmailInput from "../general/Emailnput"
 import HeartLunchSvg from "../../assets/heart-lunch.svg"
 
 const SignUp = () => {
   return (
     <SectionWrapper className="bg-tan">
-      <div className="wrapper flex-col align justify">
+      <div
+        className="wrapper flex-col align justify"
+        style={{ width: "100%", maxWidth: 700 }}
+      >
         <Icon src={HeartLunchSvg} />
         <h5 className="margin-b20">See why parents love BetterLunch</h5>
         <p

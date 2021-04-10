@@ -17,7 +17,7 @@ input {
   font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #343434;
+  color: #3d3835;
 }
 
 *,
@@ -243,7 +243,7 @@ a {
 }
 
 .text-blue {
-  color: #196E7A;
+  color: #196e7a;
 }
 
 .text-bold {
@@ -301,6 +301,7 @@ a {
   color: #f69353;
   border: 2px solid #f69353;
   padding: calc(0.775rem - 2px) 0.775rem;
+  background-color: transparent;
 }
 
 .wide-btn {
@@ -317,6 +318,7 @@ a {
   padding: 0.45rem;
   border-radius: 3px;
   border: 1px solid #c3c3c3;
+  box-shadow: 0px 1px 2px #b1b1b1;
 }
 
 /* Desktop Only */

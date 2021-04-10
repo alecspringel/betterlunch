@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Divider from "../general/Divider"
 import WaveSVG from "../../assets/home-waves.svg"
-import HeroImg from "../../assets/cropped-header.png"
+import HeroImg from "../../assets/cropped-header.jpg"
+import MobileHeroImg from "../../assets/home-header-mobile.jpg"
 import Button from "../general/Button"
 import Schools from "./Schools"
 
@@ -33,8 +34,9 @@ const Head = () => {
           </div>
         </MessageBox>
         <ImgDiv>
-          <ImageBackground src={WaveSVG} />
+          {/* <ImageBackground src={WaveSVG} /> */}
           <SideImg src={HeroImg} />
+          <MobileImg src={MobileHeroImg} />
         </ImgDiv>
       </BackgroundImg>
       <SchoolWrapper>
@@ -47,7 +49,7 @@ const Head = () => {
 export default Head
 
 const BackgroundImg = styled.section`
-  min-height: 565px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +61,10 @@ const ImgDiv = styled.div`
   width: 100%;
   overflow: hidden;
   height: 75vh;
-  min-height: 565px;
+  min-height: 500px;
+  @media (max-width: 855px) {
+    position: absolute;
+  }
 `
 
 const ImageBackground = styled.img`
@@ -75,6 +80,19 @@ const SideImg = styled.img`
   object-fit: cover;
   left: 5%;
   top: 0;
+  @media (max-width: 855px) {
+    display: none;
+  }
+`
+
+const MobileImg = styled.img`
+  display: none;
+  object-fit: cover;
+  @media (max-width: 855px) {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 `
 
 const MessageBox = styled.div`
@@ -85,6 +103,22 @@ const MessageBox = styled.div`
   margin: 20px;
   padding: 50px;
   flex-shrink: 0;
+  z-index: 1;
+  @media (max-width: 1055px) {
+    flex-shrink: 1;
+    padding: 0;
+    h1 {
+      font-size: 2.3rem;
+    }
+    h6 {
+      font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 855px) {
+    padding: 20px;
+    box-shadow: 0 3px 6px #00000016;
+    border-radius: 6px;
+  }
 `
 
 const SchoolWrapper = styled.section`
