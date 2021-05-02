@@ -242,8 +242,12 @@ a {
   color: #f69353;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .text-blue {
-  color: #196e7a;
+  color: #196E7A;
 }
 
 .text-bold {

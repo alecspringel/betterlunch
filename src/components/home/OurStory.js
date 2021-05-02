@@ -19,7 +19,7 @@ const OurStory = () => {
           <ImageWrapper>
             <Image src={ChildPhoto} />
           </ImageWrapper>
-          <div className="flex-1 flex-row" style={{ position: "relative" }}>
+          <TextSection className="flex-1" style={{ position: "relative" }}>
             <TextWrapper>
               <h6 className="margin-b10 text-bold">Our Promise</h6>
               <p className="p-large">
@@ -43,16 +43,16 @@ const OurStory = () => {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam
               </p>
-              <div className="flex-row align" style={{ marginTop: 60 }}>
-                <Divider style={{ marginRight: 20 }} />
+              <SignatureDiv className="align" style={{ marginTop: 60 }}>
+                <SignatureDivider />
                 <SignatureImg src={SignatureSvg} />
                 <div className="flex-col" style={{ marginLeft: 20 }}>
                   <p className="text-bold p-large mont">Stephanie Springel</p>
                   <p className="p-large mont">Founder of BetterLunch</p>
                 </div>
-              </div>
+              </SignatureDiv>
             </TextWrapper>
-          </div>
+          </TextSection>
         </Content>
       </div>
     </section>
@@ -73,6 +73,9 @@ const ImageWrapper = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
+  @media (max-width: 855px) {
+    margin: auto;
+  }
 `
 
 const Image = styled.img`
@@ -89,8 +92,33 @@ const TextWrapper = styled.div`
   z-index: 1;
   margin-left: 50px;
   line-height: 35px;
+  @media (max-width: 855px) {
+    margin-left: 0;
+  }
+`
+
+const SignatureDiv = styled.div`
+  display: flex;
+  @media (max-width: 855px) {
+    display: block;
+  }
 `
 
 const SignatureImg = styled.img`
   height: 50px;
+`
+
+const TextSection = styled.div`
+  display: flex;
+  @media (max-width: 855px) {
+    display: block;
+  }
+`
+
+const SignatureDivider = styled(Divider)`
+  margin-right: 23px;
+  @media (max-width: 855px) {
+    display: block;
+    margin: 53px auto;
+  }
 `

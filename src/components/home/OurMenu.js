@@ -1,31 +1,39 @@
 import React from "react"
 import styled from "styled-components"
-import SaladBg from "../../assets/home-options.jpg"
+import SaladBg from "../../assets/home-menu.jpg"
 import Button from "../general/Button"
-import Divider from "../general/Divider"
+import MenuSvg from "../../assets/menu.svg"
+import StartingAtPriceCircle from "../general/StartingAtPriceCircle"
 
 const OurMenu = () => {
   return (
     <SectionWrapper className="flex-row">
       <div className="wrapper" style={{ width: "100%" }}>
-        <TextWrapper className="flex-row align justify">
+        <TextWrapper className="flex-row align">
           <div>
+            <MenuIcon src={MenuSvg} />
             <div className="inline-b">
-              <h3 className="inline-b text-white">Our Menu</h3>
+              <h3 className="inline-b text-white">Options For Everyone</h3>
             </div>
-            <p
-              className="margin-t20 space-text p-large text-white"
+            <h6
+              className="margin-t20 space-text lato text-white"
               style={{ maxWidth: 900 }}
             >
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            </p>
+            </h6>
             <Button
               className="primary-btn"
-              style={{ width: 200, justifySelf: "flex-end", marginTop: 50 }}
+              style={{
+                width: 200,
+                justifySelf: "flex-end",
+                marginTop: 70,
+                position: "relative",
+              }}
             >
+              {/* <StartingAtPriceCircle top={"-104%"} right={"-24%"} /> */}
               View Our Menu
             </Button>
           </div>
@@ -40,16 +48,19 @@ export default OurMenu
 
 const SectionWrapper = styled.section`
   background-image: linear-gradient(
-      to left,
-      rgba(245, 246, 252, 0),
-      rgba(0, 0, 0, 0.73)
+      90deg,
+      rgb(0 0 0 / 50%) 0%,
+      rgb(0 0 0 / 28%) 51%,
+      rgb(0 0 0 / 4%) 100%
     ),
     url(${SaladBg});
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
   background-size: cover;
-  padding: 15rem 2.5rem;
+  padding: 15rem 5.5rem;
+  background-position: center;
+  @media (max-width: 700px) {
+    padding: 15rem 1.5rem;
+  }
 `
 
 const TextWrapper = styled.div`
@@ -59,8 +70,10 @@ const TextWrapper = styled.div`
   }
 `
 
-const Image = styled.img`
-  border-radius: 4px;
-  box-shadow: 0 5px 15px rgb(148 148 148 / 20%);
-  width: 50%;
+const MenuIcon = styled.img`
+  display: block;
+  margin-bottom: 20px;
+  @media (max-width: 700px) {
+    margin: 20px auto;
+  }
 `

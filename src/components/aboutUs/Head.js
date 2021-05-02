@@ -41,6 +41,7 @@ const Flex = styled.div`
 
 const Heading = styled.h2`
   color: #fff;
+  letter-spacing: 2px;
 `
 
 const TextWrapper = styled.div`

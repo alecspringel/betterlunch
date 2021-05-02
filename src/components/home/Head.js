@@ -64,6 +64,7 @@ const ImgDiv = styled.div`
   min-height: 500px;
   @media (max-width: 855px) {
     position: absolute;
+    height: auto;
   }
 `
 
@@ -91,7 +92,6 @@ const MobileImg = styled.img`
   @media (max-width: 855px) {
     display: block;
     height: 100%;
-    width: 100%;
   }
 `
 
@@ -126,4 +126,7 @@ const SchoolWrapper = styled.section`
   overflow: hidden;
   padding: 68px 0;
   box-shadow: 0 0 6px #00000016;
+  @media (max-width: 855px) {
+    display: none;
+  }
 `
