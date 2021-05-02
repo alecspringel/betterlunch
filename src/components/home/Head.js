@@ -1,34 +1,39 @@
-import React from "react"
-import styled from "styled-components"
-import Divider from "../general/Divider"
-import WaveSVG from "../../assets/home-waves.svg"
-import HeroImg from "../../assets/cropped-header.jpg"
-import MobileHeroImg from "../../assets/home-header-mobile.jpg"
-import Button from "../general/Button"
-import Schools from "./Schools"
+import React from 'react';
+import styled from 'styled-components';
+import HeroImg from '../../assets/cropped-header.jpg';
+import MobileHeroImg from '../../assets/home-header-mobile.jpg';
+import Button from '../general/Button';
+import Schools from './Schools';
+import { useScreenSize } from '../contexts/ScreenSize';
 
 const Head = () => {
+  const screen = useScreenSize();
   return (
     <>
       <BackgroundImg>
         <MessageBox>
           <h1>
-            Hot Lunch, <br />
-            Made <span className="text-orange">Better.</span>
+            Hot Lunch,
+            {' '}
+            <br />
+            Made
+            {' '}
+            <span className="text-orange">Better.</span>
           </h1>
           <h6 className="margin-bottom lato margin-t20">
             Proudly serving children in the Las Vegas Valley since 2011, Better
-            Lunch has delivered over{" "}
+            Lunch has delivered over
+            {' '}
             <span className="text-bold">2 million fresh lunches to date.</span>
           </h6>
           <div className="margin-t20">
             <Button
               className="primary-btn"
-              style={{ width: 130, marginRight: 15 }}
+              style={screen.sm ? { width: '100%', marginBottom: 10 } : { width: 130, marginRight: 15 }}
             >
               Sign Up
             </Button>
-            <Button className="primary-line" style={{ width: 130 }}>
+            <Button className="primary-line" style={screen.sm ? { width: '100%' } : { width: 130 }}>
               Learn More
             </Button>
           </div>
@@ -43,10 +48,10 @@ const Head = () => {
         <Schools />
       </SchoolWrapper>
     </>
-  )
-}
+  );
+};
 
-export default Head
+export default Head;
 
 const BackgroundImg = styled.section`
   min-height: 500px;
@@ -54,7 +59,7 @@ const BackgroundImg = styled.section`
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-`
+`;
 
 const ImgDiv = styled.div`
   position: relative;
@@ -66,13 +71,13 @@ const ImgDiv = styled.div`
     position: absolute;
     height: auto;
   }
-`
+`;
 
 const ImageBackground = styled.img`
   position: relative;
   height: 100%;
   align-self: stretch;
-`
+`;
 
 const SideImg = styled.img`
   height: 100%;
@@ -84,7 +89,7 @@ const SideImg = styled.img`
   @media (max-width: 855px) {
     display: none;
   }
-`
+`;
 
 const MobileImg = styled.img`
   display: none;
@@ -93,7 +98,7 @@ const MobileImg = styled.img`
     display: block;
     height: 100%;
   }
-`
+`;
 
 const MessageBox = styled.div`
   width: 500px;
@@ -119,7 +124,7 @@ const MessageBox = styled.div`
     box-shadow: 0 3px 6px #00000016;
     border-radius: 6px;
   }
-`
+`;
 
 const SchoolWrapper = styled.section`
   height: 300px;
@@ -129,4 +134,4 @@ const SchoolWrapper = styled.section`
   @media (max-width: 855px) {
     display: none;
   }
-`
+`;
