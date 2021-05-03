@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
-const useBreakpoint = (size) => {
+const useBreakpoint = (query) => {
   const [matches, setMatches] = useState(null);
 
   useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${size}px)`);
+    const media = window.matchMedia(query);
     if (media.matches !== matches) {
       setMatches(media.matches);
     }
@@ -13,7 +13,7 @@ const useBreakpoint = (size) => {
     };
     media.addEventListener('change', listener);
     return () => media.removeEventListener('change', listener);
-  }, [matches, size]);
+  }, [matches, query]);
   return matches;
 };
 

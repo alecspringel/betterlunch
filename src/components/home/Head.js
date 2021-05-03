@@ -29,11 +29,11 @@ const Head = () => {
           <div className="margin-t20">
             <Button
               className="primary-btn"
-              style={screen.sm ? { width: '100%', marginBottom: 10 } : { width: 130, marginRight: 15 }}
+              style={!screen.smMax ? { width: 130, marginRight: 15 } : { marginBottom: 10 }}
             >
               Sign Up
             </Button>
-            <Button className="primary-line" style={screen.sm ? { width: '100%' } : { width: 130 }}>
+            <Button className="primary-line" style={!screen.smMax && { width: 130 }}>
               Learn More
             </Button>
           </div>
@@ -71,12 +71,6 @@ const ImgDiv = styled.div`
     position: absolute;
     height: auto;
   }
-`;
-
-const ImageBackground = styled.img`
-  position: relative;
-  height: 100%;
-  align-self: stretch;
 `;
 
 const SideImg = styled.img`

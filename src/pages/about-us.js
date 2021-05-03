@@ -1,18 +1,17 @@
-import React from "react"
-import Head from "../components/aboutUs/Head"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HowItWorks from "../components/aboutUs/HowItWorks"
-import ByUs from "../components/aboutUs/ByUs"
-import Fresh from "../components/aboutUs/Fresh"
-import ForYou from "../components/aboutUs/ForYou"
-import OurTeam from "../components/aboutUs/OurTeam"
-import Features from "../components/aboutUs/Features"
-import Menu from "../components/aboutUs/Menu"
-import Footer from "../components/aboutUs/Footer"
+import React from 'react';
+import Head from '../components/aboutUs/Head';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import HowItWorks from '../components/aboutUs/HowItWorks';
+import ByUs from '../components/aboutUs/ByUs';
+import OurTeam from '../components/aboutUs/OurTeam';
+import Features from '../components/aboutUs/Features';
+import Menu from '../components/aboutUs/Menu';
+import Footer from '../components/aboutUs/Footer';
+import { ScreenSizeProvider } from '../components/contexts/ScreenSize';
 
-const AboutUs = () => {
-  return (
+const AboutUs = () => (
+  <ScreenSizeProvider>
     <Layout>
       <SEO title="About Us" />
       <div className="content">
@@ -25,7 +24,7 @@ const AboutUs = () => {
         <Footer />
       </div>
     </Layout>
-  )
-}
+  </ScreenSizeProvider>
+);
 
-export default AboutUs
+export default AboutUs;

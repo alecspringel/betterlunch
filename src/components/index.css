@@ -20,6 +20,10 @@ input {
   color: #3d3835;
 }
 
+h2 {
+  letter-spacing: 2px;
+}
+
 *,
 :after,
 :before {
@@ -164,7 +168,7 @@ a {
 }
 
 .padded-section {
-  padding: 2.5rem 2.5rem;
+  padding: 5rem 2.5rem;
 }
 
 .content {
@@ -286,6 +290,7 @@ a {
 /* Global Components */
 
 .btn {
+  display: inline-block;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.8rem;
@@ -293,6 +298,8 @@ a {
   border-radius: 3px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
+  width: fit-content;
+  text-align: center;
 }
 
 .primary-btn {

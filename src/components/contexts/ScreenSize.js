@@ -1,5 +1,4 @@
 import React, {
-  useState,
   createContext,
   useContext,
 } from 'react';
@@ -11,14 +10,40 @@ const ScreenSizeContext = createContext(defaultValue);
 
 const ScreenSizeProvider = ({ children }) => {
   const sizes = {
-    sm: useBreakpoint(400),
-    md: useBreakpoint(720),
-    lg: useBreakpoint(1050),
-    xl: useBreakpoint(1300),
+    sm: useBreakpoint('(min-width: 0px)'),
+    smMax: useBreakpoint('(max-width: 400px)'),
+    md: useBreakpoint('(min-width: 400px)'),
+    mdMax: useBreakpoint('(max-width: 720px)'),
+    lg: useBreakpoint('(min-width: 720px)'),
+    lgMax: useBreakpoint('(max-width: 1050px)'),
+    xl: useBreakpoint('(min-width: 1050px)'),
   };
 
+  const only = (size) => {
+    const screenSizes = { ...sizes };
+    if (screenSizes[size]) {
+      delete screenSizes[size];
+      return Object.values(screenSizes).every((val) => !val);
+    }
+    return false;
+  };
+  // const only = (sizeList) => {
+  //   const screenSizes = { ...sizes };
+  //   // If every size in sizeList is true,
+  //   // remove them from object and then check that all others are false
+  //   if (sizeList.every((size) => {
+  //     if (screenSizes[size] === true) {
+  //       delete screenSizes[size];
+  //       return true;
+  //     } return false;
+  //   })) {
+  //     return Object.values(screenSizes).every((val) => !val);
+  //   }
+  //   return false;
+  // };
+
   return (
-    <ScreenSizeContext.Provider value={sizes}>
+    <ScreenSizeContext.Provider value={{ ...sizes, only }}>
       {children}
     </ScreenSizeContext.Provider>
   );

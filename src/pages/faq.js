@@ -1,17 +1,20 @@
-import React from "react"
-import Head from "../components/faq/Head"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import { ScreenSizeProvider } from '../components/contexts/ScreenSize';
+import Head from '../components/faq/Head';
+import Questions from '../components/faq/Questions';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-const faq = () => {
-  return (
+const faq = () => (
+  <ScreenSizeProvider>
     <Layout>
       <SEO title="FAQ" />
       <div className="content">
         <Head />
+        <Questions />
       </div>
     </Layout>
-  )
-}
+  </ScreenSizeProvider>
+);
 
-export default faq
+export default faq;
