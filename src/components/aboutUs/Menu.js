@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import MenuItem from '../general/MenuItem';
-import KormaImg from '../../assets/menu-items/chicken-korma.jpg';
-import ChickenImg from '../../assets/menu-items/chicken-large.jpg';
-import CookieImg from '../../assets/menu-items/cookie-sandwich.jpg';
-import SaladImg from '../../assets/menu-items/garden-salad.jpg';
-import SphagettiImg from '../../assets/menu-items/sphagetti-meatballs.jpg';
-import BistroImg from '../../assets/menu-items/yogurt-fruit-bistro.jpg';
+import KormaImg from '../../menuPhotos/chicken-korma.jpg';
+import ChickenImg from '../../menuPhotos/chicken-large.jpg';
+import CookieImg from '../../menuPhotos/cookie-sandwich.jpg';
+import SaladImg from '../../menuPhotos/garden-salad.jpg';
+import SphagettiImg from '../../menuPhotos/sphagetti-meatballs.jpg';
+import BistroImg from '../../menuPhotos/yogurt-fruit-bistro.jpg';
 import Button from '../general/Button';
 
 const Menu = () => (

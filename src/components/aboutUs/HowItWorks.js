@@ -104,7 +104,7 @@ const LeftHalf = styled(HalfDiv)`
 `;
 
 const FlexWrapper = styled.div`
-  margin: 20px 0;
+  /* margin: 20px 0; */
   @media (max-width: 53.75rem) {
     flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
   }

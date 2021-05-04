@@ -1,4 +1,4 @@
-const questionData = [
+const FAQ = [
   {
     question: 'Do you serve nuts?',
     answer: 'We are a nut-free facility and have no nut items in any of our menu items.  However, we do source bread from a local baker that has nuts in their building, so there is a potential for cross contamination.',
@@ -41,4 +41,4 @@ const questionData = [
   },
 ];
 
-export default questionData;
+export default FAQ;
