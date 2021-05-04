@@ -13,11 +13,11 @@ const Navigation = () => {
   return (
     <NavBar isOpen={isOpen}>
       <MobileNav style={{ textAlign: 'center' }}>
-        <MobileDiv>
+        <FlexDiv>
           <NavItem style={{ float: 'left' }} className="hide-on-desktop ">
             <HamburgerNav toggleNav={toggleNav} isOpen={isOpen} />
           </NavItem>
-        </MobileDiv>
+        </FlexDiv>
         <FlexDiv>
           <Logo src={NavLogo} alt="BetterLunch Logo" />
         </FlexDiv>

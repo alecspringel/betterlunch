@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import MenuItem from '../general/MenuItem';
-import KormaImg from '../../menuPhotos/chicken-korma.jpg';
-import ChickenImg from '../../menuPhotos/chicken-large.jpg';
+import KormaImg from '../../menuPhotos/chicken-korma-and-rice.jpg';
+import ChickenImg from '../../menuPhotos/chicken-tenders-large.jpg';
 import CookieImg from '../../menuPhotos/cookie-sandwich.jpg';
 import SaladImg from '../../menuPhotos/garden-salad.jpg';
-import SphagettiImg from '../../menuPhotos/sphagetti-meatballs.jpg';
+import SphagettiImg from '../../menuPhotos/spaghetti-with-meatballs.jpeg';
 import BistroImg from '../../menuPhotos/yogurt-fruit-bistro.jpg';
 import Button from '../general/Button';
 

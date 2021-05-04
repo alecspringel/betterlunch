@@ -1,35 +1,40 @@
-import React from "react"
-import styled from "styled-components"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import React from 'react';
+import styled from 'styled-components';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Challenger from '../../assets/schools/challenger.png';
+import HendersonInternational from '../../assets/schools/henderson-international.png';
+import Faith from '../../assets/schools/faith.png';
+import LVDS from '../../assets/schools/lvds.png';
+import Marryhill from '../../assets/schools/marryhill.png';
 
 const LOGOS = [
   {
-    path: require("../../assets/schools/challenger.png"),
-    title: "Challenger Logo",
+    path: Challenger,
+    title: 'Challenger Logo',
   },
 
   {
-    path: require("../../assets/schools/henderson-international.png"),
-    title: "Henderson International Logo",
+    path: HendersonInternational,
+    title: 'Henderson International Logo',
   },
   {
-    path: require("../../assets/schools/faith.png"),
-    title: "Faith Lutheran Logo",
+    path: Faith,
+    title: 'Faith Lutheran Logo',
   },
   {
-    path: require("../../assets/schools/lvds.png"),
-    title: "Las Vegas Day School Logo",
+    path: LVDS,
+    title: 'Las Vegas Day School Logo',
   },
   {
-    path: require("../../assets/schools/marryhill.png"),
-    title: "Marryhill Logo",
+    path: Marryhill,
+    title: 'Marryhill Logo',
   },
-]
+];
 
 const Schools = () => {
-  var settings = {
+  const settings = {
     dots: false,
     slidesToShow: 4,
     autoplay: true,
@@ -61,19 +66,19 @@ const Schools = () => {
         },
       },
     ],
-  }
+  };
   return (
     <Slider {...settings}>
-      {LOGOS.map(photo => (
+      {LOGOS.map((photo) => (
         <div>
           <Logo src={photo.path} alt={photo.title} />
         </div>
       ))}
     </Slider>
-  )
-}
+  );
+};
 
-export default Schools
+export default Schools;
 
 const Logo = styled.img`
   max-height: 9.375rem;
@@ -85,4 +90,4 @@ const Logo = styled.img`
   @media (min-width: 28.125rem) {
     max-width: 25rem;
   }
-`
+`;
