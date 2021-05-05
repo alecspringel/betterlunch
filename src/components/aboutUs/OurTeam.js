@@ -12,7 +12,7 @@ import annaImg from '../../assets/team/anna.jpg';
 const OurTeam = () => (
   <section className="wrapper padded-section text-center">
     <h3 className="margin-bottom">Our Team</h3>
-    <p className="margin-bottom">
+    <p className="margin-bottom p-large">
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod
     </p>

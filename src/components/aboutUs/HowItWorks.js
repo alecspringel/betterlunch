@@ -15,7 +15,7 @@ const HowItWorks = () => (
         </LeftHalf>
         <RightHalf>
           <TextWrapper extraSpace>
-            <h5>1. Sign in online or with mobile</h5>
+            <h6>1. Sign in online or with mobile</h6>
             <p className="p-large margin-t10">
               Proudly serving children in the Las Vegas Valley since 2011,
               Better Lunch has delivered over 2 million fresh lunches to date.
@@ -26,7 +26,7 @@ const HowItWorks = () => (
       <FlexWrapper className="flex-row align" reverse>
         <LeftHalf>
           <LeftTextWrapper>
-            <h5>2. Customize &amp; choose your meals</h5>
+            <h6>2. Customize &amp; choose your meals</h6>
             <p className="p-large margin-t10">
               Proudly serving children in the Las Vegas Valley since 2011,
               Better Lunch has delivered over 2 million fresh lunches to date.
@@ -43,7 +43,7 @@ const HowItWorks = () => (
         </LeftHalf>
         <RightHalf>
           <TextWrapper>
-            <h5>3. We'll prepare &amp; deliver</h5>
+            <h6>3. We'll prepare &amp; deliver</h6>
             <p className="p-large margin-t10">
               Proudly serving children in the Las Vegas Valley since 2011,
               Better Lunch has delivered over 2 million fresh lunches to date.
@@ -92,7 +92,9 @@ const LeftTextWrapper = styled(TextWrapper)`
 
 const HalfDiv = styled.div`
   flex: 1;
-  margin: 0 20px;
+  @media(min-width: 720px) {
+    margin: 0 20px;
+  }
 `;
 
 const RightHalf = styled(HalfDiv)`

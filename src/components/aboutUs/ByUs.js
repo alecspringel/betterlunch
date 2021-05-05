@@ -9,22 +9,19 @@ const ByUs = () => (
     <CornerOrangeIcon src={CornerOrange} alt="orange fruit icon" />
     <Flex className="flex-row padded-section wrapper">
       <TextFlex className="flex-col justify">
-        <h3 className="margin-bottom">
+        <h4 className="margin-bottom">
           Real Delicious Meals,
           {' '}
           <HideBreak />
           Made By Us
-        </h3>
+        </h4>
         <p className="text-bold margin-bottom text-orange p-large">
           Meals are prepared and delivered by our full-time, 30+ kitchen staff
         </p>
         <MaxWidthP className="p-large">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum. Stet clita kasd
+          nonumy eirmod tempor invidunt ut labore et dolore
         </MaxWidthP>
-        <p className="p-large" style={{ marginTop: 40 }}>Have questions about our program?</p>
         <div className="margin-t20">
           <Button
             className="button primary-btn wide-btn"
@@ -53,19 +50,20 @@ const Flex = styled.div`
 const TextFlex = styled.div`
   flex: 1;
   margin-top: 1.25rem;
-  text-align: center;
   z-index: 2;
+  padding-right: 0;
   @media (min-width: 56.25rem) {
     margin-top: 0;
     text-align: left;
+    padding-right: 30px;
   }
 `;
 
 const LargeImg = styled.img`
   width: 100%;
-  @media (min-width: 43.4375rem) {
+  /* @media (min-width: 43.4375rem) {
     width: 87%;
-  }
+  } */
 `;
 
 const ImageWrapper = styled.div`

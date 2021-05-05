@@ -14,7 +14,6 @@ const MenuList = ({ data }) => (
 export default MenuList;
 
 const Background = styled.section`
-  background: #FCFCFC;
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
@@ -27,5 +26,5 @@ const Background = styled.section`
 const Section = styled.section`
   background: #f9f9f9;
   width: 100%;
-  padding: 1.875rem 1.5rem;
+  padding: 2.875rem 1.5rem;
 `;

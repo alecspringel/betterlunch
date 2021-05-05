@@ -6,7 +6,7 @@ function MenuItem({ image, data }) {
   const fetchedImage = getImage(image);
   return (
     <Card>
-      <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover' }} />
+      <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover', borderRadius: "7px 7px 0 0" }} />
       <DescriptionDiv>
         <p className="text-bold mont">{data?.title}</p>
       </DescriptionDiv>
@@ -17,11 +17,17 @@ function MenuItem({ image, data }) {
 export default MenuItem;
 
 const Card = styled.article`
+  /* position: relative;
   width: 250px;
-  background: #fff;
-  border-radius: 2px;
-  box-shadow: 0 3px 4px 1px #00000021;
   min-height: 237px;
+  text-align: center; */
+  position: relative;
+  width: 250px;
+  border: 2px solid #ececec;
+  min-height: 237px;
+  text-align: center;
+  background: white;
+  border-radius: 7px;
 `;
 
 const DescriptionDiv = styled.div`
