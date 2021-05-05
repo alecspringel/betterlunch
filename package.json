@@ -45,7 +45,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby-plugin-s3 deploy"
+    "deploy": "gatsby build && gatsby-plugin-s3 deploy"
   },
   "repository": {
     "type": "git",

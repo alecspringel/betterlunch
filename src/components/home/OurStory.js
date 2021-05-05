@@ -1,65 +1,63 @@
-import React from "react"
-import styled from "styled-components"
-import ChildPhoto from "../../assets/child-eating.jpg"
-import SignatureSvg from "../../assets/signature.svg"
-import Divider from "../general/Divider"
+import React from 'react';
+import styled from 'styled-components';
+import ChildPhoto from '../../assets/child-eating.jpg';
+import SignatureSvg from '../../assets/signature.svg';
+import Divider from '../general/Divider';
 
-const OurStory = () => {
-  return (
-    <section className="bg-tan" style={{ padding: "7rem 2.5rem" }}>
-      <div className="wrapper flex-col justify" style={{ maxWidth: "86rem" }}>
-        <h3 className="text-center">Feeding our Future</h3>
-        <p
-          className="text-orange margin-t10 text-center lato text-bold"
-          style={{ marginBottom: 70 }}
-        >
-          One meal at a time
-        </p>
-        <Content className="flex-row">
-          <ImageWrapper>
-            <Image src={ChildPhoto} />
-          </ImageWrapper>
-          <TextSection className="flex-1" style={{ position: "relative" }}>
-            <TextWrapper>
-              <h6 className="margin-b10 text-bold">Our Promise</h6>
-              <p className="p-large">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <h6 style={{ marginTop: 60 }} className="text-bold">
-                Personalized Meals
-              </h6>
-              <p className="p-large">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <h6 style={{ marginTop: 60 }} className="text-bold">
-                Always Fresh
-              </h6>
-              <p className="p-large">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <SignatureDiv className="align" style={{ marginTop: 60 }}>
-                <SignatureDivider />
-                <SignatureImg src={SignatureSvg} />
-                <div className="flex-col" style={{ marginLeft: 20 }}>
-                  <p className="text-bold p-large mont">Stephanie Springel</p>
-                  <p className="p-large mont">Founder of BetterLunch</p>
-                </div>
-              </SignatureDiv>
-            </TextWrapper>
-          </TextSection>
-        </Content>
-      </div>
-    </section>
-  )
-}
+const OurStory = () => (
+  <section className="bg-tan" style={{ padding: '7rem 2.5rem' }}>
+    <div className="wrapper flex-col justify" style={{ maxWidth: '86rem' }}>
+      <h3 className="text-center">Feeding our Future</h3>
+      <p
+        className="text-orange margin-t10 text-center lato text-bold"
+        style={{ marginBottom: 70 }}
+      >
+        One meal at a time
+      </p>
+      <Content className="flex-row">
+        <ImageWrapper>
+          <Image src={ChildPhoto} />
+        </ImageWrapper>
+        <TextSection className="flex-1" style={{ position: 'relative' }}>
+          <TextWrapper>
+            <h6 className="margin-b10 text-bold">Our Promise</h6>
+            <p className="p-large">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
+            </p>
+            <h6 style={{ marginTop: 60 }} className="text-bold">
+              Personalized Meals
+            </h6>
+            <p className="p-large">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
+            </p>
+            <h6 style={{ marginTop: 60 }} className="text-bold">
+              Always Fresh
+            </h6>
+            <p className="p-large">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
+            </p>
+            <SignatureDiv className="align" style={{ marginTop: 60 }}>
+              <SignatureDivider />
+              <SignatureImg src={SignatureSvg} />
+              <div className="flex-col" style={{ marginLeft: 20 }}>
+                <p className="text-bold p-large mont">Stephanie Springel</p>
+                <p className="p-large mont">Founder of BetterLunch</p>
+              </div>
+            </SignatureDiv>
+          </TextWrapper>
+        </TextSection>
+      </Content>
+    </div>
+  </section>
+);
 
-export default OurStory
+export default OurStory;
 
 const Content = styled.div`
   @media (max-width: 855px) {
@@ -67,7 +65,7 @@ const Content = styled.div`
     align-items: center;
     text-align: center;
   }
-`
+`;
 
 const ImageWrapper = styled.div`
   width: 50%;
@@ -75,8 +73,9 @@ const ImageWrapper = styled.div`
   align-items: center;
   @media (max-width: 855px) {
     margin: auto;
+    width: 80%;
   }
-`
+`;
 
 const Image = styled.img`
   border-radius: 4px;
@@ -85,7 +84,7 @@ const Image = styled.img`
   @media (max-width: 855px) {
     margin-bottom: 35px;
   }
-`
+`;
 
 const TextWrapper = styled.div`
   max-width: 800px;
@@ -95,25 +94,25 @@ const TextWrapper = styled.div`
   @media (max-width: 855px) {
     margin-left: 0;
   }
-`
+`;
 
 const SignatureDiv = styled.div`
   display: flex;
   @media (max-width: 855px) {
     display: block;
   }
-`
+`;
 
 const SignatureImg = styled.img`
   height: 50px;
-`
+`;
 
 const TextSection = styled.div`
   display: flex;
   @media (max-width: 855px) {
     display: block;
   }
-`
+`;
 
 const SignatureDivider = styled(Divider)`
   margin-right: 23px;
@@ -121,4 +120,4 @@ const SignatureDivider = styled(Divider)`
     display: block;
     margin: 53px auto;
   }
-`
+`;

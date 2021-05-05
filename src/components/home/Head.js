@@ -20,13 +20,11 @@ const Head = () => {
             {' '}
             <span className="text-orange">Better.</span>
           </h1>
-          <h6 className="margin-bottom lato margin-t20">
+          <p className={`margin-bottom lato p-large ${screen.mdMax ? 'margin-t10' : 'margin-t20'}`}>
             Proudly serving children in the Las Vegas Valley since 2011, Better
-            Lunch has delivered over
-            {' '}
-            <span className="text-bold">2 million fresh lunches to date.</span>
-          </h6>
-          <div className="margin-t20">
+            Lunch has delivered over 2 million fresh lunches to date.
+          </p>
+          <div style={{ marginTop: screen.mdMax ? 20 : 30 }}>
             <Button
               className="primary-btn"
               style={!screen.smMax ? { width: 130, marginRight: 15 } : { marginBottom: 10 }}
@@ -98,7 +96,7 @@ const MessageBox = styled.div`
   width: 500px;
   margin: auto;
   background: #fff;
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 20px;
   padding: 50px;
   flex-shrink: 0;
@@ -114,9 +112,9 @@ const MessageBox = styled.div`
     }
   }
   @media (max-width: 855px) {
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 3px 6px #00000016;
-    border-radius: 6px;
+    border-radius: 10px;
   }
 `;
 
