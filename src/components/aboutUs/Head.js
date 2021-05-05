@@ -18,10 +18,9 @@ const Head = () => {
             Made Fresh
           </Heading>
           <p className="p-large text-white margin-t10">
-            Lorem ipsum dolor sit amet, consetetur sadipscing
-            {' '}
+            Get started with your first meal today
           </p>
-          <Button className="primary-btn margin-t20" keepWidth>Do Something</Button>
+          <Button className="primary-btn margin-t20" keepWidth style={{ width: 130 }}>Sign Up Here</Button>
         </TextWrapper>
       </div>
     </Flex>
@@ -44,7 +43,6 @@ const Flex = styled.div`
 
 const Heading = styled.h2`
   color: #fff;
-  letter-spacing: 2px;
 `;
 
 const TextWrapper = styled.div`

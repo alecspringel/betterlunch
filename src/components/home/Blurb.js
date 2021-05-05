@@ -20,26 +20,26 @@ const Blurb = () => (
           <p className="text-bold margin-bottom p-large mont">
             Flexible Ordering
           </p>
-          <ConfinedP>
+          <ConfinedP className="p-large">
             Pick the days your child wants BetterLunch
           </ConfinedP>
         </Container>
         <Container>
           <Icons src={ForYouIcon} alt="BetterLunch orange logo" />
           <p className="text-bold margin-bottom p-large mont">Made For You</p>
-          <ConfinedP>
+          <ConfinedP className="p-large">
             Customize and pick your favorite meals
           </ConfinedP>
         </Container>
         <Container>
           <Icons src={FreshIcon} alt="BetterLunch orange logo" />
           <p className="text-bold margin-bottom p-large mont">Always Fresh</p>
-          <ConfinedP>
+          <ConfinedP className="p-large">
             We will prepare and deliver it the same day
           </ConfinedP>
         </Container>
       </FlexIcons>
-      <Button className="wide-btn primary-btn" style={{ marginTop: 80 }}>
+      <Button className="wide-btn primary-btn" style={{ marginTop: 80 }} to="about-us">
         Learn More
       </Button>
     </Content>

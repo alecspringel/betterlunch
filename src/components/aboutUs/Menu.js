@@ -48,7 +48,7 @@ const Menu = () => (
         description="Snacks and desserts to go with each meal"
       />
     </MenuWrapper>
-    <Button className="primary-btn margin-t20 wide-btn" style={{ margin: 'auto' }}>
+    <Button className="primary-btn margin-t20 wide-btn" style={{ margin: 'auto' }} to="/menu">
       Our Menu
     </Button>
   </section>

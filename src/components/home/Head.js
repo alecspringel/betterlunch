@@ -28,10 +28,11 @@ const Head = () => {
             <Button
               className="primary-btn"
               style={!screen.smMax ? { width: 130, marginRight: 15 } : { marginBottom: 10 }}
+              to="https://mybetterlunch.ahotlunch.com/p/register"
             >
               Sign Up
             </Button>
-            <Button className="primary-line" style={!screen.smMax && { width: 130 }}>
+            <Button className="primary-line" style={!screen.smMax && { width: 130 }} to="/about-us">
               Learn More
             </Button>
           </div>

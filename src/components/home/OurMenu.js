@@ -18,12 +18,12 @@ const OurMenu = () => (
             className="margin-t20 space-text p-large text-white"
             style={{ maxWidth: 900 }}
           >
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            Our menu features a variety of sizes and options for dietary restrictions,
+            and options that will appeal to all! These offerings are updated each month, so be
+            sure to check back for our latest meals.
           </p>
           <Button
+            to="/menu"
             className="primary-btn"
             style={{
               width: 200,

@@ -11,12 +11,20 @@ const Footer = () => {
       <div className="flex-1 flex-row align justify">
         <TextWrapper>
           <Heading>
-            Let's Make Lunch Better, Together
+            Let&apos;s Make Lunch Better, Together
           </Heading>
           <p className="p-large text-white margin-t10">
-            Lorem ipsum dolor sit amet, consetetur sadipscing
+            Explore all of the options we have to offer on our menu
           </p>
-          <Button className="primary-btn margin-t20" keepWidth>Do Something</Button>
+          <Button
+            className="primary-btn margin-t20"
+            keepWidth
+            to="/menu"
+            style={{ width: 130 }}
+          >
+            Our Menu
+
+          </Button>
         </TextWrapper>
       </div>
       {screen.lg && <div className="flex-1" />}

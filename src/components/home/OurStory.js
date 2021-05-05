@@ -22,25 +22,25 @@ const OurStory = () => (
           <TextWrapper>
             <h6 className="margin-b10 text-bold">Our Promise</h6>
             <p className="p-large">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam
+              BetterLunch is commited to serving quality meals made with
+              fresh ingredients. We source locally whenever possible, and
+              take no shortcuts when it comes to our food.
             </p>
             <h6 style={{ marginTop: 60 }} className="text-bold">
               Personalized Meals
             </h6>
             <p className="p-large">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam
+              Our menu is diverse and constantly changing. We provide gluten-free
+              and vegetarian options, a variety of sizes, and additional options
+              to make every meal personal.
             </p>
             <h6 style={{ marginTop: 60 }} className="text-bold">
               Always Fresh
             </h6>
             <p className="p-large">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam
+              Did we mention fresh already? Nutrition plays an important role in
+              our children&apos;s ability to learn and grow—that&apos;s why we
+              only put the best ingredients into our food.
             </p>
             <SignatureDiv className="align" style={{ marginTop: 60 }}>
               <SignatureDivider />

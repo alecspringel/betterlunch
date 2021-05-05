@@ -19,12 +19,14 @@ const ByUs = () => (
           Meals are prepared and delivered by our full-time, 30+ kitchen staff
         </p>
         <MaxWidthP className="p-large">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore
+          Our kitchen staff prepare hundreds of meals every day, and deliver them
+          fresh to your child&apos;s school. Every meal is made to order, and always delivered fresh.
+          Still have any questions about our program? Take a look at our frequently asked questions!
         </MaxWidthP>
         <div className="margin-t20">
           <Button
             className="button primary-btn wide-btn"
+            to="/faq"
           >
             FAQ
           </Button>

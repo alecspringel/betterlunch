@@ -7,7 +7,7 @@ import WorkingImg from '../../assets/working-inkitchen.png';
 const HowItWorks = () => (
   <section className="text-center padded-section" style={{ paddingBottom: '2rem' }}>
     <h4 className="text-orange">HOW IT WORKS</h4>
-    <p className="p-large margin-t10">Change Text</p>
+    <p className="p-large margin-t10">Getting started is simple with three easy steps</p>
     <Wrapper className="flex-col justify">
       <FlexWrapper className="flex-row align">
         <LeftHalf>
@@ -17,8 +17,18 @@ const HowItWorks = () => (
           <TextWrapper extraSpace>
             <h6>1. Sign in online or with mobile</h6>
             <p className="p-large margin-t10">
-              Proudly serving children in the Las Vegas Valley since 2011,
-              Better Lunch has delivered over 2 million fresh lunches to date.
+              Sign up online or with the mobile app, and
+              fill out your child&apos;s name and school.
+            </p>
+            <p className="margin-t20">
+              Download the iPhone app
+              {' '}
+              <a
+                href="https://apps.apple.com/ag/app/hotlunch-school-software/id1451511654"
+                className="text-orange lato"
+              >
+                here
+              </a>
             </p>
           </TextWrapper>
         </RightHalf>
@@ -28,8 +38,8 @@ const HowItWorks = () => (
           <LeftTextWrapper>
             <h6>2. Customize &amp; choose your meals</h6>
             <p className="p-large margin-t10">
-              Proudly serving children in the Las Vegas Valley since 2011,
-              Better Lunch has delivered over 2 million fresh lunches to date.
+              Select your favorite meals from our menu and
+              choose add-ons and options
             </p>
           </LeftTextWrapper>
         </LeftHalf>
@@ -43,10 +53,10 @@ const HowItWorks = () => (
         </LeftHalf>
         <RightHalf>
           <TextWrapper>
-            <h6>3. We'll prepare &amp; deliver</h6>
+            <h6>3. We&apos;ll prepare &amp; deliver</h6>
             <p className="p-large margin-t10">
-              Proudly serving children in the Las Vegas Valley since 2011,
-              Better Lunch has delivered over 2 million fresh lunches to date.
+              On the days you selected, we&apos;ll prepare and
+              deliver the meal fresh to your child
             </p>
           </TextWrapper>
         </RightHalf>
