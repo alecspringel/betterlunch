@@ -1,15 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
 
-const OrderNowBtn = () => {
-  return (
-    <a
-      className="button-primary"
-      href="https://mybetterlunch.ahotlunch.com/login"
-    >
-      Order
-    </a>
-  )
-}
+const OrderNowBtn = () => (
+  <a
+    className="btn primary-btn"
+    href="https://mybetterlunch.ahotlunch.com/login"
+  >
+    Order
+  </a>
+);
 
-export default OrderNowBtn
+export default OrderNowBtn;
