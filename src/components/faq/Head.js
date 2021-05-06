@@ -14,7 +14,7 @@ const Head = () => (
       />
       <p>
         Didn&apos;t find what you were looking for?
-        <Link className="text-orange no-decoration" to="/contact"> Ask us a question.</Link>
+        <Link className="text-orange no-decoration" to="/contact"> Ask us a question</Link>
       </p>
     </SearchDiv>
   </Background>

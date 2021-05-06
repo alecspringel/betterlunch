@@ -1,82 +1,75 @@
-import React from "react"
-import styled from "styled-components"
-import CircleLogo from "../../assets/branding/circle-logo.svg"
-import Facebook from "../../assets/facebook.svg"
-import Instagram from "../../assets/instagram.svg"
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import CircleLogo from '../../assets/branding/circle-logo.svg';
+import Facebook from '../../assets/facebook.svg';
+import Instagram from '../../assets/instagram.svg';
 
-const Footer = () => {
-  return (
-    <Background>
-      <Content>
-        <Flex1 className="flex-1 text-center">
-          <Logo src={CircleLogo} alt="BetterLunch Logo" />
-        </Flex1>
-        <Flex1 className="flex-1">
-          <FlexCol>
-            <HeadingLi>
-              <Heading className="text-bold">Pages</Heading>
-            </HeadingLi>
-            <FootLi>
-              <a>Home</a>
-            </FootLi>
-            <FootLi>
-              <a>About Us</a>
-            </FootLi>
-            <FootLi>
-              <a>News &amp; Updates</a>
-            </FootLi>
-            <FootLi>
-              <a>Contact Us</a>
-            </FootLi>
-            <FootLi>
-              <a>FAQ</a>
-            </FootLi>
-          </FlexCol>
-        </Flex1>
-        <Flex1 className="flex-1">
-          <FlexCol>
-            <HeadingLi>
-              <Heading className="text-bold">Contact Us</Heading>
-            </HeadingLi>
-            <FootLi>
-              <a>Support</a>
-            </FootLi>
-            <FootLi>
-              <a href="tel:702-431-4463">+1 (702) 431-4463</a>
-            </FootLi>
-            <FootLi>
-              <a href="mailto: hello@mybetterlunch.com">
-                hello@mybetterlunch.com
-              </a>
-            </FootLi>
-          </FlexCol>
-        </Flex1>
-        <Flex1 className="flex-1">
-          <FlexCol>
-            <HeadingLi>
-              <Heading className="text-bold">Follow Us</Heading>
-            </HeadingLi>
-            <FootLi>
-              <a>
-                <Social src={Facebook} alt="Facebook Icon" />
-              </a>
-              <a>
-                <Social src={Instagram} alt="Instagram Icon" />
-              </a>
-            </FootLi>
-          </FlexCol>
-        </Flex1>
-      </Content>
-    </Background>
-  )
-}
+const Footer = () => (
+  <Background>
+    <Content>
+      <Flex1 className="flex-1 text-center">
+        <Logo src={CircleLogo} alt="BetterLunch Logo" />
+      </Flex1>
+      <Flex1 className="flex-1">
+        <FlexCol>
+          <HeadingLi>
+            <Heading className="text-bold">Pages</Heading>
+          </HeadingLi>
+          <FootLi>
+            <NavLink to="/">Home</NavLink>
+          </FootLi>
+          <FootLi>
+            <NavLink to="/about-us">About Us</NavLink>
+          </FootLi>
+          <FootLi>
+            <NavLink to="/contact">Contact Us</NavLink>
+          </FootLi>
+          <FootLi>
+            <NavLink to="/faq">FAQ</NavLink>
+          </FootLi>
+        </FlexCol>
+      </Flex1>
+      <Flex1 className="flex-1">
+        <FlexCol>
+          <HeadingLi>
+            <Heading className="text-bold">Contact Us</Heading>
+          </HeadingLi>
+          <FootLi>
+            <NavLink href="tel:702-431-4463">+1 (702) 431-4463</NavLink>
+          </FootLi>
+          <FootLi>
+            <NavLink href="mailto: hello@mybetterlunch.com">
+              hello@mybetterlunch.com
+            </NavLink>
+          </FootLi>
+        </FlexCol>
+      </Flex1>
+      <Flex1 className="flex-1">
+        <FlexCol>
+          <HeadingLi>
+            <Heading className="text-bold">Follow Us</Heading>
+          </HeadingLi>
+          <FootLi>
+            <NavLink to="https://www.facebook.com/mybetterlunch/">
+              <Social src={Facebook} alt="Facebook Icon" />
+            </NavLink>
+            <NavLink to="https://www.instagram.com/mybetter_fit/">
+              <Social src={Instagram} alt="Instagram Icon" />
+            </NavLink>
+          </FootLi>
+        </FlexCol>
+      </Flex1>
+    </Content>
+  </Background>
+);
 
-export default Footer
+export default Footer;
 
 const Background = styled.footer`
   background: #fff;
   padding: 20px 0;
-`
+`;
 
 const Content = styled.div`
   max-width: 78.125rem;
@@ -86,16 +79,16 @@ const Content = styled.div`
   @media (min-width: 46.875rem) {
     flex-direction: row;
   }
-`
+`;
 
 const Logo = styled.img`
   margin-top: 0.25rem;
   height: 9.5rem;
-`
+`;
 
 const Flex1 = styled.div`
   justify-content: center;
-`
+`;
 
 const FlexCol = styled.ul`
   text-align: center;
@@ -106,7 +99,7 @@ const FlexCol = styled.ul`
     margin: auto;
     text-align: left;
   }
-`
+`;
 
 const FootLi = styled.li`
   padding: 10px;
@@ -115,7 +108,7 @@ const FootLi = styled.li`
     padding: 5px;
     display: block;
   }
-`
+`;
 
 const HeadingLi = styled.li`
   display: none;
@@ -123,16 +116,24 @@ const HeadingLi = styled.li`
     display: block;
     padding: 5px;
   }
-`
+`;
 
 const Heading = styled.p`
   display: none;
   @media (min-width: 46.875rem) {
     display: block;
   }
-`
+`;
 
 const Social = styled.img`
   height: 1.6rem;
   margin: 5px;
-`
+`;
+
+const NavLink = styled(Link)`
+  text-decoration: none;
+  :hover {
+    color: #f69353;
+    text-decoration: underline;
+  }
+`;

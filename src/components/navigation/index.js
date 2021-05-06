@@ -10,6 +10,8 @@ import HamburgerNav from './HamburgerNav';
 
 const Navigation = () => {
   const [isOpen, toggleNav] = useState(false);
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : undefined;
+
   return (
     <NavBar isOpen={isOpen}>
       <MobileNav style={{ textAlign: 'center' }}>
@@ -31,10 +33,10 @@ const Navigation = () => {
         <DesktopNav isOpen={isOpen}>
           <LeftNav className="dropdown-nav">
             <NavItem className="expand-nav ">
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" active={pathname === '/'}>Home</NavLink>
             </NavItem>
             <NavItem className="collapse-nav expand-nav ">
-              <NavLink to="/about-us">About</NavLink>
+              <NavLink to="/about-us" active={pathname === '/about-us'}>About</NavLink>
               {/* <Dropdown
                 content={<p style={{ fontSize: "1rem" }}>About</p>}
                 options={
@@ -54,7 +56,7 @@ const Navigation = () => {
               /> */}
             </NavItem>
             <NavItem className="hide-on-desktop">
-              <NavLink to="/about-us" className="">
+              <NavLink to="/about-us" active={pathname === '/about-us'}>
                 About Us
               </NavLink>
             </NavItem>
@@ -64,18 +66,18 @@ const Navigation = () => {
               </NavLink>
             </NavItem> */}
             <NavItem className="expand-nav ">
-              <NavLink to="/faq">FAQ</NavLink>
+              <NavLink to="/faq" active={pathname === '/faq'}>FAQ</NavLink>
             </NavItem>
             <NavItem className="expand-nav ">
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/contact" active={pathname === '/contact'}>Contact Us</NavLink>
             </NavItem>
             <NavItem className="hide-on-desktop">
-              <NavLink to="/menu">Menu Photos</NavLink>
+              <NavLink to="/menu" active={pathname === '/menu'}>Menu Photos</NavLink>
             </NavItem>
           </LeftNav>
           <RightNav className="collapse-nav expand-nav">
             <NavItem className="collapse-nav expand-nav">
-              <NavLink to="/menu">Menu Photos</NavLink>
+              <NavLink to="/menu" active={pathname === '/menu'}>Menu Photos</NavLink>
             </NavItem>
             <NavItem className="collapse-nav expand-nav">
               <OrderNowBtn />
@@ -163,6 +165,11 @@ const NavItem = styled.li`
 
 const NavLink = styled(Link)`
   text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    opacity: ${(props) => !props.active && 0.6};
+  }
+  color: ${(props) => props.active && '#f69353'};
 `;
 
 const MobileNav = styled.nav`
