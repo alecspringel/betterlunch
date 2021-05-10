@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import EmailInput from '../general/Emailnput';
 import HeartLunchSvg from '../../assets/heart-lunch.svg';
 import Button from '../general/Button';
+import CCEmailSignUp from '../general/CCEmailSignUp';
 
 const SignUp = () => (
   <SectionWrapper className="bg-tan">
@@ -21,13 +22,7 @@ const SignUp = () => (
         on all we offer.
       </p>
       <SignUpWrapper>
-        <input
-          type="email"
-          placeholder="hello@mybetterlunch.com"
-          className="input-primary flex-1"
-          style={{ width: '100%' }}
-        />
-        <SubscribeBtn className="primary-btn">Subscribe</SubscribeBtn>
+        <CCEmailSignUp />
       </SignUpWrapper>
       <p className="margin-t20">
         Ready to place your first order?

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import './navigation.css';
@@ -10,7 +10,14 @@ import HamburgerNav from './HamburgerNav';
 
 const Navigation = () => {
   const [isOpen, toggleNav] = useState(false);
+  const [activeMenu, setActiveMenu] = useState('/');
   const pathname = typeof window !== 'undefined' ? window.location.pathname : undefined;
+
+  useEffect(() => {
+    // Remove trailing slash from pathname
+    const pathWithoutEndSlash = pathname.slice(-1) === '/' ? pathname.slice(0, -1) : pathname;
+    setActiveMenu(pathWithoutEndSlash);
+  }, [pathname]);
 
   return (
     <NavBar isOpen={isOpen}>
@@ -33,10 +40,10 @@ const Navigation = () => {
         <DesktopNav isOpen={isOpen}>
           <LeftNav className="dropdown-nav">
             <NavItem className="expand-nav ">
-              <NavLink to="/" active={pathname === '/'}>Home</NavLink>
+              <NavLink to="/" active={activeMenu === ''}>Home</NavLink>
             </NavItem>
             <NavItem className="collapse-nav expand-nav ">
-              <NavLink to="/about-us" active={pathname === '/about-us'}>About</NavLink>
+              <NavLink to="/about-us" active={activeMenu === '/about-us'}>About</NavLink>
               {/* <Dropdown
                 content={<p style={{ fontSize: "1rem" }}>About</p>}
                 options={
@@ -56,7 +63,7 @@ const Navigation = () => {
               /> */}
             </NavItem>
             <NavItem className="hide-on-desktop">
-              <NavLink to="/about-us" active={pathname === '/about-us'}>
+              <NavLink to="/about-us" active={activeMenu === '/about-us'}>
                 About Us
               </NavLink>
             </NavItem>
@@ -66,18 +73,18 @@ const Navigation = () => {
               </NavLink>
             </NavItem> */}
             <NavItem className="expand-nav ">
-              <NavLink to="/faq" active={pathname === '/faq'}>FAQ</NavLink>
+              <NavLink to="/faq" active={activeMenu === '/faq'}>FAQ</NavLink>
             </NavItem>
             <NavItem className="expand-nav ">
-              <NavLink to="/contact" active={pathname === '/contact'}>Contact Us</NavLink>
+              <NavLink to="/contact" active={activeMenu === '/contact'}>Contact Us</NavLink>
             </NavItem>
             <NavItem className="hide-on-desktop">
-              <NavLink to="/menu" active={pathname === '/menu'}>Menu Photos</NavLink>
+              <NavLink to="/menu" active={activeMenu === '/menu'}>Menu Photos</NavLink>
             </NavItem>
           </LeftNav>
           <RightNav className="collapse-nav expand-nav">
             <NavItem className="collapse-nav expand-nav">
-              <NavLink to="/menu" active={pathname === '/menu'}>Menu Photos</NavLink>
+              <NavLink to="/menu" active={activeMenu === '/menu'}>Menu Photos</NavLink>
             </NavItem>
             <NavItem className="collapse-nav expand-nav">
               <OrderNowBtn />

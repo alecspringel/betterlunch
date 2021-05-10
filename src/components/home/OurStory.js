@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import ChildPhoto from '../../assets/child-eating.jpg';
 import SignatureSvg from '../../assets/signature.svg';
 import Divider from '../general/Divider';
+import DotBackground from '../../assets/dot-background.svg';
 
 const OurStory = () => (
-  <section className="bg-tan" style={{ padding: '7rem 2.5rem' }}>
+  <Background className="bg-tan" style={{ padding: '7rem 2.5rem' }}>
     <div className="wrapper flex-col justify" style={{ maxWidth: '86rem' }}>
       <h3 className="text-center">Feeding our Future</h3>
       <p
@@ -54,10 +55,14 @@ const OurStory = () => (
         </TextSection>
       </Content>
     </div>
-  </section>
+  </Background>
 );
 
 export default OurStory;
+
+const Background = styled.section`
+  background: url(${DotBackground});
+`;
 
 const Content = styled.div`
   @media (max-width: 855px) {

@@ -1,0 +1,29 @@
+.ctct-gdpr-text {
+  display: none !important;
+}
+
+.ctct-inline-form {
+  width: 100% !important;
+}
+
+/* Form button */
+.ctct-form-button {
+  font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  padding: 0.775rem !important;
+}
+
+/* Form wrapper */
+.ctct-form-defaults {
+  padding: 0 !important;
+}
+
+.ctct-form-required:before {
+  content: none !important;
+}
+
+.ctct-form-element {
+  font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif !important;
+}
+

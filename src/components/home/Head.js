@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../../assets/cropped-header.jpg';
+import HeroImg from '../../assets/home-header-curved.png';
 import MobileHeroImg from '../../assets/home-header-mobile.jpg';
 import Button from '../general/Button';
 import Schools from './Schools';
@@ -79,6 +79,8 @@ const SideImg = styled.img`
   object-fit: cover;
   left: 5%;
   top: 0;
+  -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-65px 2px 0 #DBEAEC);
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-65px 2px 0 #DBEAEC);
   @media (max-width: 855px) {
     display: none;
   }
