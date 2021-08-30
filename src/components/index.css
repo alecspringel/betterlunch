@@ -84,6 +84,12 @@ h6 {
   letter-spacing: .2px;
 }
 
+.p {
+  font-size: 1rem;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
 p {
   font-size: 1rem;
   font-family: "Lato";
