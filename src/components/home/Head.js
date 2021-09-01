@@ -38,8 +38,6 @@ const Head = () => {
           </div>
         </MessageBox>
         <ImgDiv>
-          {/* <ImageBackground src={WaveSVG} /> */}
-          <SideImg src={HeroImg} />
           <MobileImg src={MobileHeroImg} />
         </ImgDiv>
       </BackgroundImg>
@@ -66,23 +64,13 @@ const ImgDiv = styled.div`
   overflow: hidden;
   height: 75vh;
   min-height: 500px;
+  background-image: url(${HeroImg});
+  background-size: cover;
+  background-position-x: left;
   @media (max-width: 855px) {
+    background-image: none;
     position: absolute;
     height: auto;
-  }
-`;
-
-const SideImg = styled.img`
-  height: 100%;
-  min-width: 100%;
-  position: absolute;
-  object-fit: cover;
-  left: 5%;
-  top: 0;
-  -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-65px 2px 0 #DBEAEC);
-  filter: drop-shadow(1px 1px 0 black) drop-shadow(-65px 2px 0 #DBEAEC);
-  @media (max-width: 855px) {
-    display: none;
   }
 `;
 
