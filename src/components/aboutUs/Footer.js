@@ -39,7 +39,7 @@ const Flex = styled.div`
   display: flex;
   background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(${BackgroundImg});
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: top;
   background-size: cover;
   justify-content: flex-end;
   height: 37rem;

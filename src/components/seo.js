@@ -8,7 +8,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql, withPrefix } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
   description, lang, meta, title,
@@ -54,12 +54,7 @@ function SEO({
           content: 'website',
         },
       ].concat(meta)}
-    >
-      {/* <!-- Begin Constant Contact Active Forms --> */}
-      <script> var _ctct_m = "44aaf64ffefc4eb68611c269b436eaf1"; </script>
-      <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer />
-      {/* <!-- End Constant Contact Active Forms --> */}
-    </Helmet>
+    />
   );
 }
 

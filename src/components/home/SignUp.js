@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import EmailInput from '../general/Emailnput';
 import HeartLunchSvg from '../../assets/heart-lunch.svg';
 import Button from '../general/Button';
-import CCEmailSignUp from '../general/CCEmailSignUp';
 
 const SignUp = () => (
   <SectionWrapper className="bg-tan">
@@ -15,20 +13,25 @@ const SignUp = () => (
       <h5 className="margin-b20">See why parents love BetterLunch</h5>
       <p
         className="p-large text-center space-text"
-        style={{ maxWidth: 800, marginBottom: 40 }}
+        style={{ maxWidth: 800, marginBottom: 20 }}
       >
         BetterLunch is always adding new items to the menu and serving up new
         opportunities in our community. Join the newsletter to stay up to date
         on all we offer.
       </p>
       <SignUpWrapper>
-        <CCEmailSignUp />
+        <Button
+          to="https://lp.constantcontactpages.com/su/TUebgd0/betterlunch"
+          className="primary-btn wide-btn"
+        >
+          Join Our Newsletter
+        </Button>
       </SignUpWrapper>
       <p className="margin-t20">
         Ready to place your first order?
         {' '}
         <a
-          className="no-decoration text-orange"
+          className="p no-decoration text-orange"
           style={{ cursor: 'pointer' }}
           href="https://mybetterlunch.ahotlunch.com/p/register"
         >
@@ -51,19 +54,5 @@ const Icon = styled.img`
 `;
 
 const SignUpWrapper = styled.div`
-  display: flex;
   width: 100%;
-  @media (max-width: 638px) {
-    display: block;
-  }
-`;
-const SubscribeBtn = styled(Button)`
-  width: auto;
-  margin-left: 10px;
-  min-width: 170px;
-  @media (max-width: 638px) {
-    margin-top: 10px;
-    margin-left: 0;
-    width: 100%;
-  }
 `;

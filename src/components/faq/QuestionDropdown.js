@@ -32,9 +32,9 @@ const Background = styled.button`
   padding: 15px;
   margin: 7px 0;
   border: 1px solid ${(props) => (props.isOpen ? 'gray' : 'transparent')};
-  transition: all 100ms ease-in-out;
+  transition: all 50ms ease-in-out;
   :hover {
-    border: 1px solid gray;
+    background: #f2f2f2;
   }
 `;
 
