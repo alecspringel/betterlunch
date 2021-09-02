@@ -31,7 +31,7 @@ const Background = styled.button`
   text-align: left;
   padding: 15px;
   margin: 7px 0;
-  border: 1px solid ${(props) => (props.isOpen ? 'gray' : 'transparent')};
+  background: ${(props) => (props.isOpen ? '#f2f2f2' : '#F7F8F9')};
   transition: all 50ms ease-in-out;
   :hover {
     background: #f2f2f2;

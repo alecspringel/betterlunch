@@ -4,13 +4,25 @@ import Footer from '../footer';
 import backgroundImg from '../../assets/contact-bg.jpg';
 import phone from '../../assets/phone.svg';
 import mail from '../../assets/mail.svg';
-import questionMark from '../../assets/question-mark.svg';
+import faq from '../../assets/question-answer.svg';
 import Divider from '../general/Divider';
+import ContactCard from './ContactCard';
+import Button from '../general/Button';
 
 const Head = () => (
-  <FlexSection>
-    <Background>
-      <Content className="bg-secondary">
+  <>
+    <FlexSection>
+      <HeadDivWrapper>
+        <TextWrapper>
+          <h3 className="margin-b10">Get in Touch</h3>
+          <p className="p-large margin-b20">
+            Need help getting started or have a question? Our staff is available Monday - Friday, 9AM to 5PM to answer questions or help with any issues.
+          </p>
+          <Divider />
+        </TextWrapper>
+      </HeadDivWrapper>
+      <div style={{ flex: 1 }}>
+        {/* <Content className="bg-secondary">
         <h3>Contact Us</h3>
         <Divider />
         <p className="margin-bottom p-large">
@@ -34,64 +46,78 @@ const Head = () => (
             FAQ
           </ContactOption>
         </FlexOptions>
-      </Content>
-    </Background>
+      </Content> */}
+      </div>
+    </FlexSection>
+    <div>
+      <ContactOptions>
+        <ContactCard
+          iconPath={mail}
+          heading="Email"
+          description="Our staff will typically respond to emails within 24 hours."
+          actionText="hello@mybetterlunch.com"
+          href="mailto: hello@mybetterlunch.com"
+        />
+        <ContactCard
+          iconPath={phone}
+          heading="Talk With Us"
+          description="We are available by phone during our working hours from 9AM - 5PM, Monday through Friday."
+          actionText="+1 (702) 431-4463"
+          href="tel:702-431-4463"
+        />
+      </ContactOptions>
+    </div>
+    <section className="text-center" style={{ marginBottom: 40, padding: 20 }}>
+      <h5>Check out our frequently asked questions!</h5>
+      <Button to="/faq" className="primary-btn" style={{ margin: '30px 0 20px 0' }}>Visit FAQ</Button>
+    </section>
     <Footer />
-  </FlexSection>
+  </>
 );
 
 export default Head;
 
 const FlexSection = styled.section`
   display: flex;
-  flex-direction: column;
-  height: calc(100vh - 3.75rem);
-`;
-
-const Background = styled.div`
-  flex: 1;
-  background-image: url(${backgroundImg});
+  flex-direction: row;
+  /* height: calc(100vh - 3.75rem); */
+  min-height: 300px;
+  width: 100%;
+  /* background: rgb(247,246,244); */
+  background-image: linear-gradient(90deg, rgba(247,246,244,1) 45%, rgba(0,0,0,0) 100%), url(${backgroundImg});
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
-  min-height: 565px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Content = styled.div`
-  width: 90%;
-  box-shadow: 1px 1px 6px 1px #00000038;
-  border-radius: 3px;
-  padding: 20px;
-
-  @media (min-width: 65.625rem) {
-    width: 50%;
-    margin: auto;
+  @media (max-width: 625px) {
+    background-image: linear-gradient(90deg, rgba(247,246,244,1) 45%, rgb(247 246 244 / 87%) 60%), url(${backgroundImg});
   }
 `;
 
-const FlexOptions = styled.div`
-  display: flex;
-  flex-direction: column;
+// Keeps header text on left half of header
+const HeadDivWrapper = styled.div`
+  flex: 1;
+  padding: 40px;
+  @media (max-width: 625px) {
+    flex: 8;
+  }
 `;
 
-const ContactOption = styled.a`
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  padding: 5px;
-  margin: 5px 0;
-  border-radius: 3px;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+// Wrapper for header text
+const TextWrapper = styled.div`
+  margin-left: auto;
+  width: fit-content;
+  max-width: 520px;
 `;
 
-const Icon = styled.img`
-  max-height: 1.5rem;
-  max-width: 1.5rem;
-  margin: 0 15px;
+const ContactOptions = styled.section`
+  display: flex;
+  position: relative;
+  top: -35px;
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+  @media (max-width: 625px) {
+    flex-wrap: wrap;
+  }
 `;
