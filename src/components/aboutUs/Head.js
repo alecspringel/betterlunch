@@ -20,7 +20,7 @@ const Head = () => {
           <p className="p-large text-white margin-t10">
             Get started with your first meal today
           </p>
-          <Button className="primary-btn margin-t20" keepWidth style={{ width: 130 }}>Sign Up Here</Button>
+          <a className="btn primary-btn margin-t20" keepWidth style={{ width: 130 }} href="https://mybetterlunch.ahotlunch.com/p/register" target="_blank" rel="noreferrer">Sign Up Here</a>
         </TextWrapper>
       </div>
     </Flex>

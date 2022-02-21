@@ -27,8 +27,8 @@ const MENU_DATA = {
   'apples-sunbutter': {
     title: 'Apples with Sunbutter',
     category: 'snack',
-    glutenfree: false,
-    vegetarian: false,
+    glutenfree: true,
+    vegetarian: true,
   },
   'bacon-ranch-salad': {
     title: 'Bacon Ranch Salad',
@@ -46,7 +46,7 @@ const MENU_DATA = {
     title: 'Bean and Cheese Enchiladas',
     category: 'meal',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'beef-teryaki': {
     title: 'Beef Teriyaki with Rice',
@@ -58,13 +58,13 @@ const MENU_DATA = {
     title: 'Birthday Cake Protein Bites',
     category: 'snack',
     glutenfree: true,
-    vegetarian: false,
+    vegetarian: true,
   },
   'broccoli-cheese-soup': {
     title: 'Broccoli Cheese Soup',
     category: 'meal',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'burrito-bowl': {
     title: 'Burrito Bowl',
@@ -75,8 +75,8 @@ const MENU_DATA = {
   'caramel-apple-protein-bites': {
     title: 'Caramel Apple Protein Bites',
     category: 'snack',
-    glutenfree: false,
-    vegetarian: false,
+    glutenfree: true,
+    vegetarian: true,
   },
   'cheese-pizza-dippers-large': {
     title: 'Cheese Pizza Dippers Large',
@@ -107,7 +107,7 @@ const MENU_DATA = {
     title: 'Cherry Chocolate Chip Cookie',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'chicken-parm-and-pasta': {
     title: 'Chicken Parm and Pasta',
@@ -124,13 +124,13 @@ const MENU_DATA = {
   'chicken-fried-rice': {
     title: 'Chicken Fried Rice',
     category: 'meal',
-    glutenfree: false,
+    glutenfree: true,
     vegetarian: false,
   },
   'chicken-korma-and-rice': {
     title: 'Chicken Korma and Rice',
     category: 'meal',
-    glutenfree: false,
+    glutenfree: true,
     vegetarian: false,
   },
   'chicken-mash-bowl': {
@@ -169,13 +169,13 @@ const MENU_DATA = {
     title: 'Chocolate Chip Cookie',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'chocolate-pudding-cup': {
     title: 'Chocolate Pudding Cup',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'corn-and-potato-chowder': {
     title: 'Corn and Potato Chowder',
@@ -187,7 +187,7 @@ const MENU_DATA = {
     title: 'Fruit Smoothie',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'french-toast-bake': {
     title: 'French Toast Bake',
@@ -204,7 +204,7 @@ const MENU_DATA = {
   'greek-salad': {
     title: 'Greek Salad',
     category: 'meal',
-    glutenfree: false,
+    glutenfree: true,
     vegetarian: true,
   },
   'ham-cheddar-bites': {
@@ -223,7 +223,7 @@ const MENU_DATA = {
     title: 'Iced Butter Cookie',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   lasagna: {
     title: 'Lasagna',
@@ -265,7 +265,7 @@ const MENU_DATA = {
     title: 'Not Your Lunch Lady Bar',
     category: 'meal',
     glutenfree: true,
-    vegetarian: false,
+    vegetarian: true,
   },
   'orange-chicken-with-rice': {
     title: 'Orange Chicken with Rice',
@@ -295,7 +295,7 @@ const MENU_DATA = {
     title: 'Rice Krispie Treat',
     category: 'snack',
     glutenfree: true,
-    vegetarian: false,
+    vegetarian: true,
   },
   'ricotta-bake': {
     title: 'Ricotta Bake',
@@ -325,7 +325,7 @@ const MENU_DATA = {
     title: 'Snickerdoodle Cookie',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
+    vegetarian: true,
   },
   'spaghetti-with-meatballs': {
     title: 'Spaghetti with Meatballs',

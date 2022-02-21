@@ -1,6 +1,8 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
+import GlutenFreeImg from '../../assets/gluten-free.svg';
+import VegetarianImg from '../../assets/vegetarian.svg'
 
 function MenuItem({ image, data }) {
   const fetchedImage = getImage(image);
@@ -8,7 +10,7 @@ function MenuItem({ image, data }) {
     <Card>
       <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover', borderRadius: "6px 6px 0 0" }} />
       <DescriptionDiv>
-        <p className="text-bold mont">{data?.title}</p>
+        <p className="text-bold mont">{data?.title}{data.glutenfree && <Icon src={GlutenFreeImg} />}{data.vegetarian && <Icon src={VegetarianImg} />}</p>
       </DescriptionDiv>
     </Card>
   );
@@ -33,3 +35,10 @@ const Card = styled.article`
 const DescriptionDiv = styled.div`
   padding: 10px 15px;
 `;
+
+const Icon = styled.img`
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+  vertical-align: middle;
+`

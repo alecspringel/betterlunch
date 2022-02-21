@@ -32,29 +32,19 @@ const OurTeam = () => (
         </p>
       </Member>
       <Member>
-        <TeamImg src={kristineImg} className="shadow" />
-        <p className="text-bold">Kristine</p>
-        <p>Office Manager</p>
-      </Member>
-      <Member>
         <TeamImg src={jaimeImg} className="shadow" />
         <p className="text-bold">Jaime</p>
         <p>Lead Chef</p>
       </Member>
       <Member>
-        <TeamImg src={virginiaImg} className="shadow" />
-        <p className="text-bold">Virginia</p>
-        <p>Baker</p>
-      </Member>
-      <Member>
-        <TeamImg src={beckyImg} className="shadow" />
-        <p className="text-bold">Becky</p>
-        <p>Chef</p>
+        <TeamImg src={kristineImg} className="shadow" />
+        <p className="text-bold">Kristine</p>
+        <p>Office Manager</p>
       </Member>
       <Member>
         <TeamImg src={annaImg} className="shadow" />
         <p className="text-bold">Anna</p>
-        <p>Customer Support</p>
+        <p>NSLP Specialist</p>
       </Member>
     </Grid>
   </section>
@@ -66,7 +56,7 @@ const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 74.4375rem;
+  max-width: 61rem;
   margin: auto;
   margin-top: 2.5rem;
 `;
@@ -77,14 +67,12 @@ const TeamImg = styled.img`
   max-width: 8.7rem;
 `;
 
-const Member = styled.div`
+const Member = styled.li`
+  list-style: none; 
   width: 100%;
   flex: 0 50%;
   padding: 20px;
   @media (min-width: 680px) {
     flex: 0 33%;
-  }
-  @media (min-width: 1180px) {
-    flex: 0 25%;
   }
 `;

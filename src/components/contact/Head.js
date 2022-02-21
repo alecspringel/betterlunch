@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Footer from '../footer';
-import backgroundImg from '../../assets/contact-bg.jpg';
+import backgroundImg from '../../assets/contact-bg1.jpg';
 import phone from '../../assets/phone.svg';
 import mail from '../../assets/mail.svg';
 import faq from '../../assets/question-answer.svg';
@@ -16,7 +16,9 @@ const Head = () => (
         <TextWrapper>
           <h3 className="margin-b10">Get in Touch</h3>
           <p className="p-large margin-b20">
-            Need help getting started or have a question? Our staff is available Monday - Friday, 9AM to 5PM to answer questions or help with any issues.
+            Need help getting started or have a question? Our staff is available
+            <span className="text-bold"> Monday - Friday, 7AM to 2PM </span>
+            to answer questions or help with any issues.
           </p>
           <Divider />
         </TextWrapper>
@@ -54,14 +56,14 @@ const Head = () => (
         <ContactCard
           iconPath={mail}
           heading="Email"
-          description="Our staff will typically respond to emails within 24 hours."
+          description="Our staff will typically respond to emails within one day."
           actionText="hello@mybetterlunch.com"
           href="mailto: hello@mybetterlunch.com"
         />
         <ContactCard
           iconPath={phone}
           heading="Talk With Us"
-          description="We are available by phone during our working hours from 9AM - 5PM, Monday through Friday."
+          description="We are available by phone during our working hours."
           actionText="+1 (702) 431-4463"
           href="tel:702-431-4463"
         />
@@ -84,11 +86,16 @@ const FlexSection = styled.section`
   min-height: 300px;
   width: 100%;
   /* background: rgb(247,246,244); */
-  background-image: linear-gradient(90deg, rgba(247,246,244,1) 45%, rgba(0,0,0,0) 100%), url(${backgroundImg});
+  background: rgba(247,246,244,1);
+  background-image: linear-gradient(90deg, rgba(247,246,244,1) 38%, rgba(0,0,0,0) 100%), url(${backgroundImg});
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-size: cover;
+  background-size: 900px;
+  background-position: right;
+  @media (max-width: 760px) {
+    background-image: linear-gradient(90deg,rgba(247,246,244,1) 38%,rgba(0,0,0,0) 196%), url(${backgroundImg});
+  }
   @media (max-width: 625px) {
     background-image: linear-gradient(90deg, rgba(247,246,244,1) 45%, rgb(247 246 244 / 87%) 60%), url(${backgroundImg});
   }
@@ -107,7 +114,7 @@ const HeadDivWrapper = styled.div`
 const TextWrapper = styled.div`
   margin-left: auto;
   width: fit-content;
-  max-width: 520px;
+  max-width: 444px;
 `;
 
 const ContactOptions = styled.section`

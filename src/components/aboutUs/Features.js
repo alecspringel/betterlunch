@@ -10,21 +10,21 @@ const Features = () => (
     {/* <h6 className="text-blue text-bold text-center">WHY BETTERLUNCH?</h6> */}
     <FlexDiv className="flex-row" style={{ maxWidth: '84rem' }}>
       <Item>
-        <Icon src={CancelImg} className="margin-b10" />
-        <h6 className="margin-b10 text-blue text-bold">Cancel Anytime</h6>
-        <p className="p-large">
-          Pause or cancel deliveries at
-          <br />
-          anytime.
-        </p>
-      </Item>
-      <Item>
         <Icon src={CalendarImg} className="margin-b10" />
         <h6 className="margin-b10 text-blue text-bold">Flexible Ordering</h6>
         <p className="p-large">
           Pick and choose the days
           <br />
           you want BetterLunch.
+        </p>
+      </Item>
+      <Item>
+        <Icon src={CancelImg} className="margin-b10" />
+        <h6 className="margin-b10 text-blue text-bold">Need to Cancel ?</h6>
+        <p className="p-large">
+          Cancel any order by 8AM
+          <br />
+          to receive credit for a meal.
         </p>
       </Item>
       <Item>

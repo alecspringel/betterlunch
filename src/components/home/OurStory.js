@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ChildPhoto from '../../assets/child-eating.jpg';
-import SignatureSvg from '../../assets/signature.svg';
+// import SignatureSvg from '../../assets/signature.svg';
 import Divider from '../general/Divider';
 import DotBackground from '../../assets/dot-background.svg';
 
@@ -45,7 +45,7 @@ const OurStory = () => (
             </p>
             <SignatureDiv className="align" style={{ marginTop: 60 }}>
               <SignatureDivider />
-              <SignatureImg src={SignatureSvg} />
+              {/* <SignatureImg src={SignatureSvg} /> */}
               <div className="flex-col" style={{ marginLeft: 20 }}>
                 <p className="text-bold p-large mont">Stephanie Springel</p>
                 <p className="p-large mont">Founder of BetterLunch</p>
