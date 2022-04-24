@@ -1,16 +1,30 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
-import GlutenFreeImg from '../../assets/gluten-free.svg';
-import VegetarianImg from '../../assets/vegetarian.svg'
+
+const dietaryInfo = (data) => {
+  if (data.vegetarian && data.glutenfree) {
+    return "VEG + GF"
+  } else if (data.vegetarian) {
+    return "VEG"
+  } else if (data.glutenfree) {
+    return "GF"
+  } else {
+    return null
+  }
+}
 
 function MenuItem({ image, data }) {
   const fetchedImage = getImage(image);
+  const dietaryText = dietaryInfo(data);
   return (
     <Card>
       <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover', borderRadius: "6px 6px 0 0" }} />
       <DescriptionDiv>
-        <p className="text-bold mont">{data?.title}{data.glutenfree && <Icon src={GlutenFreeImg} />}{data.vegetarian && <Icon src={VegetarianImg} />}</p>
+        <p className="text-bold mont">
+          {data?.title}
+          {dietaryText && <span style={{ marginLeft: 5 }} className="text-bold text-orange inline-block">{dietaryText}</span>}
+        </p>
       </DescriptionDiv>
     </Card>
   );

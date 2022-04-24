@@ -5,8 +5,6 @@ import stephanieImg from '../../assets/team/stephanie.jpg';
 import markImg from '../../assets/team/mark.jpg';
 import kristineImg from '../../assets/team/kristine.jpg';
 import jaimeImg from '../../assets/team/jaime.jpg';
-import virginiaImg from '../../assets/team/virginia.jpg';
-import beckyImg from '../../assets/team/becky.jpg';
 import annaImg from '../../assets/team/anna.jpg';
 
 const OurTeam = () => (

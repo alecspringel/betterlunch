@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../general/Button';
 import BackgroundImg from '../../assets/about-head.jpg';
 import { useScreenSize } from '../contexts/ScreenSize';
 

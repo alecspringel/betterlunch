@@ -27,20 +27,6 @@ const ScreenSizeProvider = ({ children }) => {
     }
     return false;
   };
-  // const only = (sizeList) => {
-  //   const screenSizes = { ...sizes };
-  //   // If every size in sizeList is true,
-  //   // remove them from object and then check that all others are false
-  //   if (sizeList.every((size) => {
-  //     if (screenSizes[size] === true) {
-  //       delete screenSizes[size];
-  //       return true;
-  //     } return false;
-  //   })) {
-  //     return Object.values(screenSizes).every((val) => !val);
-  //   }
-  //   return false;
-  // };
 
   return (
     <ScreenSizeContext.Provider value={{ ...sizes, only }}>

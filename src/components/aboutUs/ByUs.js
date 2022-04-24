@@ -89,21 +89,6 @@ const MaxWidthP = styled.p`
   max-width: 46.875rem;
 `;
 
-const BackgroundIcons = styled.img`
-  position: absolute;
-  padding: 10px;
-  width: 100%;
-  left: 0;
-  border-bottom-left-radius: 0;
-  max-width: 30rem;
-  top: 0;
-  display: none;
-  @media (min-width: 56.25rem) {
-    display: block;
-    width: 30%;
-  }
-`;
-
 const CornerOrangeIcon = styled.img`
   position: absolute;
   top: 0;

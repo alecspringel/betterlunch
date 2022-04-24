@@ -1,7 +1,6 @@
 import React from 'react';
 import Divider from '../general/Divider';
-import CarrotIcon from '../../assets/vegetarian.svg';
-import GlutenFreeIcon from '../../assets/gluten-free.svg';
+// import FilterSelect from '../.upcoming-features/FilterSelect';
 
 const Head = () => (
   <div
@@ -13,16 +12,7 @@ const Head = () => (
       Our meals are made fresh everyday, with tons of options to choose from. We rotate our menu frequently, so be sure to check back here for updates and new additions!
     </p>
     <Divider style={{ margin: '25px 0' }} />
-    <div className="flex-row text-orange text-bold margin-tb10">
-      <div className="flex-row align" style={{ marginRight: 30 }}>
-        <img src={GlutenFreeIcon} style={{ height: 18, marginRight: 10 }} />
-        Gluten-Free
-      </div>
-      <div className="flex-row align">
-        <img src={CarrotIcon} style={{ height: 18, marginRight: 10 }} />
-        Vegetarian
-      </div>
-    </div>
+    {/* <FilterSelect /> */}
   </div>
 );
 
