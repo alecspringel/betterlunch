@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 const faq = () => (
   <ScreenSizeProvider>
     <Layout>
-      <SEO title="FAQ" />
+      <SEO title="FAQ" description="These are some of our most commonly asked questions." />
       <div className="content">
         <Head />
         <Questions />

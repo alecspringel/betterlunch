@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Head from '../components/contact/Head';
 import Navigation from '../components/navigation';
@@ -10,9 +9,9 @@ import { ScreenSizeProvider } from '../components/contexts/ScreenSize';
 
 const contact = () => (
   <ScreenSizeProvider>
-    <Navigation siteTitle="BetterLunch" />
+    <Navigation siteTitle="Better Lunch" />
     <main>
-      <SEO title="Contact Us" />
+      <SEO title="Contact Us" description="Need some help ordering? We've got you covered." />
       <div className="content">
         <Head />
       </div>

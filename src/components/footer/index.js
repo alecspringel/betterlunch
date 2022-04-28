@@ -5,11 +5,13 @@ import CircleLogo from '../../assets/branding/circle-logo.svg';
 import Facebook from '../../assets/facebook.svg';
 import Instagram from '../../assets/instagram.svg';
 
+const copyrightText = () => `© ${new Date().getFullYear()} Better Lunch`;
+
 const Footer = () => (
   <Background>
     <Content>
       <Flex1 className="flex-1 text-center">
-        <Logo src={CircleLogo} alt="BetterLunch Logo" />
+        <Logo src={CircleLogo} alt="Better Lunch Logo" />
       </Flex1>
       <Flex1 className="flex-1">
         <FlexCol>
@@ -57,6 +59,7 @@ const Footer = () => (
             <NavLink to="https://www.instagram.com/mybetter_fit/">
               <Social src={Instagram} alt="Instagram Icon" />
             </NavLink>
+            <p style={{ fontSize: '0.8rem' }}>{copyrightText()}</p>
           </FootLi>
         </FlexCol>
       </Flex1>

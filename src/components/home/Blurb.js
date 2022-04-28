@@ -9,30 +9,30 @@ import Button from '../general/Button';
 const Blurb = () => (
   <section className="text-center">
     <Content className="wrapper">
-      <h3 className="text-bold margin-bottom">What is BetterLunch?</h3>
+      <h3 className="text-bold margin-bottom">What is Better Lunch?</h3>
       <BlurbP className="p-large text-narrow">
-        BetterLunch serves made from scratch lunches in the Southern Nevada Valley,
+        Better Lunch serves made from scratch lunches in the Southern Nevada Valley,
         catering to all types of diets and appetites.
       </BlurbP>
       <FlexIcons>
         <Container>
-          <Icons src={FlexibleIcon} alt="BetterLunch orange logo" />
+          <Icons src={FlexibleIcon} alt="Better Lunch orange logo" />
           <p className="text-bold margin-bottom p-large mont">
             Flexible Ordering
           </p>
           <ConfinedP className="p-large">
-            Pick the days your child wants BetterLunch
+            Pick the days your child wants Better Lunch
           </ConfinedP>
         </Container>
         <Container>
-          <Icons src={ForYouIcon} alt="BetterLunch orange logo" />
+          <Icons src={ForYouIcon} alt="Better Lunch orange logo" />
           <p className="text-bold margin-bottom p-large mont">Made For You</p>
           <ConfinedP className="p-large">
             Customize and pick your favorite meals
           </ConfinedP>
         </Container>
         <Container>
-          <Icons src={FreshIcon} alt="BetterLunch orange logo" />
+          <Icons src={FreshIcon} alt="Better Lunch orange logo" />
           <p className="text-bold margin-bottom p-large mont">Always Fresh</p>
           <ConfinedP className="p-large">
             We will prepare and deliver it the same day

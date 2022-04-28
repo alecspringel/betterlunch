@@ -5,7 +5,7 @@ import './index.css';
 
 const Layout = ({ children }) => (
   <>
-    <Navigation siteTitle="BetterLunch" />
+    <Navigation siteTitle="Better Lunch" />
     <main>{children}</main>
     <Footer />
   </>

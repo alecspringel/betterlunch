@@ -3,6 +3,8 @@ module.exports = {
     title: `Better Lunch`,
     description: `Better Lunch serves hot lunch to children in schools throughout Las Vegas, Summerlin, and Henderson Nevada`,
     author: `@alecspringel`,
+    url: `https://mybetterlunch.com`,
+    image: `/images/seo.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,18 +28,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Better Lunch`,
+        short_name: `Better Lunch`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/assets/orange-whole.svg`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

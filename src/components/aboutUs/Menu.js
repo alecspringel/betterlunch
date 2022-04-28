@@ -13,7 +13,7 @@ const Menu = () => (
   <section className="text-center padded-section">
     <h4 className="text-orange">OPTIONS FOR EVERYONE</h4>
     <p className="p-large margin-t10">
-      BetterLunch offers a variety of options for all appetites, with new
+      Better Lunch offers a variety of options for all appetites, with new
       choices each month
     </p>
     <MenuWrapper className="flex-row">

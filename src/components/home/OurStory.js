@@ -23,7 +23,7 @@ const OurStory = () => (
           <TextWrapper>
             <h6 className="margin-b10 text-bold">Our Promise</h6>
             <p className="p-large">
-              BetterLunch is commited to serving quality meals made with
+              Better Lunch is committed to serving quality meals made with
               fresh ingredients. We source locally whenever possible, and
               take no shortcuts when it comes to our food.
             </p>
@@ -48,7 +48,7 @@ const OurStory = () => (
               {/* <SignatureImg src={SignatureSvg} /> */}
               <div className="flex-col" style={{ marginLeft: 20 }}>
                 <p className="text-bold p-large mont">Stephanie Springel</p>
-                <p className="p-large mont">Founder of BetterLunch</p>
+                <p className="p-large mont">Founder of Better Lunch</p>
               </div>
             </SignatureDiv>
           </TextWrapper>
@@ -106,10 +106,6 @@ const SignatureDiv = styled.div`
   @media (max-width: 855px) {
     display: block;
   }
-`;
-
-const SignatureImg = styled.img`
-  height: 50px;
 `;
 
 const TextSection = styled.div`

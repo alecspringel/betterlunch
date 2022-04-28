@@ -15,7 +15,7 @@ const Features = () => (
         <p className="p-large">
           Pick and choose the days
           <br />
-          you want BetterLunch.
+          you want Better Lunch.
         </p>
       </Item>
       <Item>

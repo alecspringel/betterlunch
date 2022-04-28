@@ -28,7 +28,7 @@ const Navigation = () => {
           </NavItem>
         </FlexDiv>
         <FlexDiv>
-          <Logo src={NavLogo} alt="BetterLunch Logo" />
+          <Logo src={NavLogo} alt="Better Lunch Logo" />
         </FlexDiv>
         <RightMobile>
           <NavItem>

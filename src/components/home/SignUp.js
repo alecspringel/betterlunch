@@ -10,12 +10,12 @@ const SignUp = () => (
       style={{ width: '100%', maxWidth: 700, textAlign: 'center' }}
     >
       <Icon src={HeartLunchSvg} />
-      <h5 className="margin-b20">See why parents love BetterLunch</h5>
+      <h5 className="margin-b20">See why parents love Better Lunch</h5>
       <p
         className="p-large text-center space-text"
         style={{ maxWidth: 800, marginBottom: 20 }}
       >
-        BetterLunch is always adding new items to the menu and serving up new
+        Better Lunch is always adding new items to the menu and serving up new
         opportunities in our community. Join the newsletter to stay up to date
         on all we offer.
       </p>

@@ -29,7 +29,7 @@ const FAQ = [
   },
   {
     question: 'Why can’t I order for the entire year at one time?',
-    answer: 'At BetterLunch we try new recipes, source different products and will remove items that kids are not loving and replace them with things they do!',
+    answer: 'At Better Lunch we try new recipes, source different products and will remove items that kids are not loving and replace them with things they do!',
   },
   {
     question: 'How can I get technical assistance with ordering?',

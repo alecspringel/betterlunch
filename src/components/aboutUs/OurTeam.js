@@ -11,7 +11,7 @@ const OurTeam = () => (
   <section className="wrapper padded-section text-center">
     <h3 className="margin-bottom">Our Team</h3>
     <p className="margin-bottom p-large">
-      Here are just a few of our team members at BetterLunch
+      Here are just a few of our team members at Better Lunch
     </p>
     <Divider style={{ margin: '1.725rem auto' }} />
     <Grid>
