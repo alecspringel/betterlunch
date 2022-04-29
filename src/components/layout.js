@@ -3,9 +3,9 @@ import Navigation from './navigation';
 import Footer from './footer';
 import './index.css';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pageName }) => (
   <>
-    <Navigation siteTitle="Better Lunch" />
+    <Navigation siteTitle="Better Lunch" pageName={pageName} />
     <main>{children}</main>
     <Footer />
   </>

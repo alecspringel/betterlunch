@@ -9,6 +9,7 @@
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^3.4.0",
     "gatsby-image": "^3.4.0",
+    "gatsby-plugin-google-gtag": "^4.13.0",
     "gatsby-plugin-image": "^1.4.0",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-offline": "^4.4.0",

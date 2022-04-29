@@ -90,4 +90,11 @@ const Logo = styled.img`
   @media (min-width: 28.125rem) {
     max-width: 25rem;
   }
+
+  animation: fadein 700ms;
+  @keyframes fadein {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    100%   { opacity: 0.8; }
+}
 `;

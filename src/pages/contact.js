@@ -9,7 +9,7 @@ import { ScreenSizeProvider } from '../components/contexts/ScreenSize';
 
 const contact = () => (
   <ScreenSizeProvider>
-    <Navigation siteTitle="Better Lunch" />
+    <Navigation siteTitle="Better Lunch" pageName="contact" />
     <main>
       <SEO title="Contact Us" description="Need some help ordering? We've got you covered." />
       <div className="content">

@@ -8,7 +8,7 @@ import MenuList from '../components/menu/MenuList';
 
 const Menu = ({ data }) => (
   <ScreenSizeProvider>
-    <Layout>
+    <Layout pageName="menu">
       <SEO title="Our Menu" description="Take a look at all of our food options." />
       <div className="content">
         <Head />

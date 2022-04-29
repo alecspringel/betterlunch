@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
     return (
       <ScreenSizeProvider>
-        <Layout>
+        <Layout pageName="home">
           <SEO title="Home" description="Better Lunch serves hot lunch to children in schools throughout Las Vegas, Summerlin, and Henderson Nevada." />
           <div className="content">
             <Head />
