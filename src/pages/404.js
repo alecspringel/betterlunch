@@ -1,16 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import HeartLunchSvg from '../assets/heart-lunch.svg';
+import { navigate } from '@reach/router';
+import { useEffect } from 'react';
 
-const NotFound404 = () => (
-  <div>
-    <Icon src={HeartLunchSvg} />
-  </div>
-);
+const NotFound404 = () => {
+  useEffect(() => {
+    navigate('/');
+  }, []);
+  return null;
+};
 
 export default NotFound404;
-
-const Icon = styled.img`
-  height: 60px;
-  margin-bottom: 40px;
-`;
