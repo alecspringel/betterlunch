@@ -17,7 +17,6 @@
     "gatsby-plugin-s3": "^0.3.5",
     "gatsby-plugin-sharp": "^3.4.0",
     "gatsby-plugin-styled-components": "^4.4.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "prop-types": "^15.7.2",
@@ -48,7 +47,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gatsby-plugin-s3 deploy"
+    "deploy-dev": "gatsby build && gatsby-plugin-s3 deploy",
+    "deploy-prod": "DEPLOY_ENV=prod gatsby build && gatsby-plugin-s3 deploy"
   },
   "repository": {
     "type": "git",

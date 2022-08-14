@@ -38,18 +38,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["Montserrat", "Lato"],
-          urls: ["fonts.css"],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "betterlunch",
+        bucketName: process.env.DEPLOY_ENV === 'prod' ? "betterlunch" : "betterlunch-dev",
       },
     },
     {

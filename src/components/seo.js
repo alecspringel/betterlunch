@@ -4,6 +4,36 @@ import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
+const fontStyles = `
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("./fonts/montserrat-v14-latin-regular.woff") format("woff");
+  font-display: block;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("./fonts/montserrat-v14-latin-600.woff2") format("woff2"),
+    url("./fonts/montserrat-v14-latin-600.woff") format("woff");
+  font-display: block;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./fonts/lato-v17-latin-regular.woff2") format("woff2"),
+    url("./fonts/lato-v17-latin-regular.woff") format("woff");
+  font-display: block;
+}
+`;
+
 const query = graphql`
   query SEO {
     site {
@@ -39,6 +69,7 @@ const SEO = ({
 
   return (
     <Helmet title={seo.title}>
+      <style>{fontStyles}</style>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
