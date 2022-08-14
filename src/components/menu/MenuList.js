@@ -1,15 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
 import MenuItem from './MenuItem';
 import MENU_DATA from '../../data/menu';
 
-const MenuList = ({ data }) => (
-  <Section>
-    <Background className="flex-row">
-      {data.images.edges.map((image) => <MenuItem image={image.node} data={MENU_DATA[image.node.name]} />)}
-    </Background>
-  </Section>
-);
+const MenuList = ({ data }) => {
+  const menuItems = useStaticQuery(graphql`
+  query allMenuItemsQuery {
+    allContentfulMenuItem {
+    nodes {
+      title
+      vegetarian
+      glutenFree
+      image {
+        gatsbyImageData
+        title
+      }
+    }
+  }
+  }
+`);
+  console.log(menuItems);
+  // allContentfulMenuItem.nodes[0].image.gatsbyImageData
+  return (
+    <Section>
+      <Background className="flex-row">
+        {menuItems.allContentfulMenuItem.nodes.map((node) => <MenuItem image={node.image.gatsbyImageData} />)}
+      </Background>
+    </Section>
+  );
+};
 
 export default MenuList;
 

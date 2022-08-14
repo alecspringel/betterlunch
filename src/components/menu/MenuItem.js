@@ -4,27 +4,27 @@ import styled from 'styled-components';
 
 const dietaryInfo = (data) => {
   if (data.vegetarian && data.glutenfree) {
-    return "VEG + GF"
-  } else if (data.vegetarian) {
-    return "VEG"
-  } else if (data.glutenfree) {
-    return "GF"
-  } else {
-    return null
+    return 'VEG + GF';
+  } if (data.vegetarian) {
+    return 'VEG';
+  } if (data.glutenfree) {
+    return 'GF';
   }
-}
+  return null;
+};
 
 function MenuItem({ image, data }) {
   const fetchedImage = getImage(image);
-  const dietaryText = dietaryInfo(data);
+  console.log(image);
+  // const dietaryText = dietaryInfo(data);
   return (
     <Card>
-      <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover', borderRadius: "6px 6px 0 0" }} />
+      <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover', borderRadius: '6px 6px 0 0' }} />
       <DescriptionDiv>
-        <p className="text-bold mont">
+        {/* <p className="text-bold mont">
           {data?.title}
           {dietaryText && <span style={{ marginLeft: 5 }} className="text-bold text-orange inline-block">{dietaryText}</span>}
-        </p>
+        </p> */}
       </DescriptionDiv>
     </Card>
   );
@@ -55,4 +55,4 @@ const Icon = styled.img`
   height: 14px;
   margin: 0 10px;
   vertical-align: middle;
-`
+`;
