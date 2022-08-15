@@ -37,6 +37,15 @@ module.exports = {
         icon: `src/assets/orange-whole.svg`, // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     custom: {
+    //       families: ["Montserrat", "Lato"],
+    //       urls: ["fonts.css"],
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-s3`,
       options: {

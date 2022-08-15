@@ -18,7 +18,12 @@ function MenuItem({ image, data }) {
   const dietaryText = dietaryInfo(data);
   return (
     <Card>
-      <GatsbyImage image={fetchedImage} style={{ objectFit: 'cover', borderRadius: '6px 6px 0 0' }} />
+      <GatsbyImage
+        image={fetchedImage}
+        style={{
+          objectFit: 'cover', borderRadius: '6px 6px 0 0', width: '100%', height: '100%',
+        }}
+      />
       <DescriptionDiv>
         <p className="text-bold mont">
           {data?.title}
@@ -37,14 +42,24 @@ const Card = styled.article`
   min-height: 237px;
   text-align: center; */
   position: relative;
-  width: 250px;
+  width: 100%;
   border: 2px solid #ececec;
-  min-height: 237px;
+  min-height: 260px;
   text-align: center;
   background: white;
   border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 573px) {
+    width: 100%;
+  }
+  @media (min-width: 450px) and (max-width: 573px) {
+    min-height: 350px;
+  }
 `;
 
 const DescriptionDiv = styled.div`
-  padding: 10px 15px;
+  padding: 10px;
+  height: 56px;
 `;

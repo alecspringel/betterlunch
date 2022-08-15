@@ -16,11 +16,19 @@ export default MenuList;
 const Background = styled.section`
   flex-wrap: wrap;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fill, 100%);
   max-width: 1200px;
   grid-gap: 26px;
   margin: auto;
   justify-content: center;
+
+  @media (min-width: 574px) {
+    grid-template-columns: repeat(auto-fill, 47%);
+  }
+  @media (min-width: 890px) {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+  //grid-template-columns: repeat(auto-fill, 250px);
 `;
 
 const Section = styled.section`

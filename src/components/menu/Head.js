@@ -5,7 +5,7 @@ import Divider from '../shared/Divider';
 const Head = () => (
   <div
     className="flex-col align justify text-center"
-    style={{ maxWidth: 800, margin: 'auto', padding: '40px 0' }}
+    style={{ maxWidth: 800, margin: 'auto', padding: '3.5rem 2.5rem' }}
   >
     <h4 style={{ margin: '0 0 25px 0' }}>Our Menu</h4>
     <p className="p-large">
