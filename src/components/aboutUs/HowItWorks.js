@@ -6,7 +6,7 @@ import WorkingImg from '../../assets/working-inkitchen.png';
 
 const HowItWorks = () => (
   <section className="text-center padded-section" style={{ paddingBottom: '2rem' }}>
-    <h4 className="text-orange">HOW IT WORKS</h4>
+    <h4 className="text-orange">HOW TO ORDER</h4>
     <p className="p-large margin-t10">Getting started is simple with three easy steps</p>
     <Wrapper className="flex-col justify">
       <FlexWrapper className="flex-row align">

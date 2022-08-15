@@ -4,7 +4,7 @@ import Footer from '../footer';
 import phone from '../../assets/phone.svg';
 import mail from '../../assets/mail.svg';
 import ContactCard from './ContactCard';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 import BackgroundImg from '../../assets/faq-header.jpg';
 
 const Head = () => (

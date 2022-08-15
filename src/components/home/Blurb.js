@@ -4,7 +4,7 @@ import Orange from '../../assets/orange-whole.svg';
 import FlexibleIcon from '../../assets/flexible-icons.svg';
 import ForYouIcon from '../../assets/for-you-icons.svg';
 import FreshIcon from '../../assets/fresh-icons.svg';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 
 const Blurb = () => (
   <section className="text-center">

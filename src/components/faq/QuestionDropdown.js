@@ -11,7 +11,7 @@ const QuestionDropdown = ({ question, answer }) => {
           {question}
         </p>
         <div>
-          <Plus src={PlusIcon} alt="plus sign dropdown" />
+          <Plus src={PlusIcon} />
         </div>
 
       </QuestionWrapper>
@@ -45,6 +45,5 @@ const QuestionWrapper = styled.div`
 const Plus = styled.img`
   width: 20px;
   height: 20px;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 24px;
 `;

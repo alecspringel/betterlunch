@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeartLunchSvg from '../../assets/heart-lunch.svg';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 
 const SignUp = () => (
   <SectionWrapper className="bg-tan">

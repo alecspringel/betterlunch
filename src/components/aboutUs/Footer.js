@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundImg from '../../assets/about-footer.jpg';
 import { useScreenSize } from '../contexts/ScreenSize';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 
 const Footer = () => {
   const screen = useScreenSize();

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Divider from '../general/Divider';
+import Divider from '../shared/Divider';
 import stephanieImg from '../../assets/team/stephanie.jpg';
 import markImg from '../../assets/team/mark.jpg';
 import kristineImg from '../../assets/team/kristine.jpg';

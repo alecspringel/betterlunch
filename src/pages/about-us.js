@@ -13,7 +13,7 @@ import { ScreenSizeProvider } from '../components/contexts/ScreenSize';
 const AboutUs = () => (
   <ScreenSizeProvider>
     <Layout pageName="about">
-      <SEO title="How it Works" description="Order online and we'll deliver directly to your child at lunch time." />
+      <SEO title="How to Order" description="Order online and we'll deliver directly to your child at lunch time." />
       <div className="content">
         <Head />
         <HowItWorks />

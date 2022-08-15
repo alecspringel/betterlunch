@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ChildPhoto from '../../assets/child-eating.jpg';
 // import SignatureSvg from '../../assets/signature.svg';
-import Divider from '../general/Divider';
+import Divider from '../shared/Divider';
 import DotBackground from '../../assets/dot-background.svg';
 
 const OurStory = () => (

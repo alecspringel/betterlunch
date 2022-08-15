@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../../assets/home-header-curved.png';
 import MobileHeroImg from '../../assets/home-header-mobile.jpg';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 import Schools from './Schools';
 import { useScreenSize } from '../contexts/ScreenSize';
 

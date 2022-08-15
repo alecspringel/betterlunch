@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MainImg from '../../assets/about-byus-main.jpg';
 import CornerOrange from '../../assets/corner-orange.svg';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 
 const ByUs = () => (
   <section style={{ position: 'relative' }} className="bg-tan">

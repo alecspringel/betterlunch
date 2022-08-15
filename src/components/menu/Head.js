@@ -1,5 +1,5 @@
 import React from 'react';
-import Divider from '../general/Divider';
+import Divider from '../shared/Divider';
 // import FilterSelect from '../.upcoming-features/FilterSelect';
 
 const Head = () => (

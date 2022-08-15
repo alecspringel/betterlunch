@@ -19,7 +19,7 @@ const Navigation = ({ pageName }) => {
           </NavItem>
         </FlexDiv>
         <FlexDiv>
-          <Logo src={NavLogo} alt="Better Lunch Logo" />
+          <Link to="/"><Logo src={NavLogo} alt="Better Lunch Logo" /></Link>
         </FlexDiv>
         <RightMobile>
           <NavItem>

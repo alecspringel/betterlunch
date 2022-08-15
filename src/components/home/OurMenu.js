@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SaladBg from '../../assets/home-menu.jpg';
-import Button from '../general/Button';
+import Button from '../shared/Button';
 import MenuSvg from '../../assets/menu.svg';
 // import StartingAtPriceCircle from '../general/StartingAtPriceCircle';
 
