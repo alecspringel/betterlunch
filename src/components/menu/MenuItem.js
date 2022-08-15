@@ -51,9 +51,6 @@ const Card = styled.article`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 573px) {
-    width: 100%;
-  }
   @media (min-width: 450px) and (max-width: 573px) {
     min-height: 350px;
   }
