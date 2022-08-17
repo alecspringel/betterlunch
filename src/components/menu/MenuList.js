@@ -3,13 +3,21 @@ import styled from 'styled-components';
 import MenuItem from './MenuItem';
 import MENU_DATA from '../../data/menu';
 
-const MenuList = ({ data }) => (
-  <Section>
-    <Background className="flex-row">
-      {data.images.edges.map((image) => <MenuItem image={image.node} data={MENU_DATA[image.node.name]} />)}
-    </Background>
-  </Section>
-);
+const MenuList = ({ data, filter }) => {
+  // eslint-disable-next-line no-nested-ternary
+  const images = filter?.value
+    ? filter.type === 'category'
+      ? data.images.edges.filter((image) => MENU_DATA[image.node.name].category === filter.value)
+      : data.images.edges.filter((image) => !!MENU_DATA[image.node.name][filter.value])
+    : data.images.edges;
+  return (
+    <Section>
+      <Background className="flex-row">
+        {images.map((image) => <MenuItem image={image.node} data={MENU_DATA[image.node.name]} />)}
+      </Background>
+    </Section>
+  );
+};
 
 export default MenuList;
 
@@ -32,7 +40,6 @@ const Background = styled.section`
 `;
 
 const Section = styled.section`
-  background: #f9f9f9;
   width: 100%;
-  padding: 2.875rem 1.5rem;
+  padding: 1.8rem 1.5rem 7rem 1.5rem;
 `;
