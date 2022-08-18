@@ -231,7 +231,7 @@ const MENU_DATA = {
     vegetarian: true,
     isNew: true,
   },
-  'chocolate-"cup"-cake': {
+  'chocolate-cup-cake': {
     title: 'Chocolate "Cup" Cake',
     category: 'snack',
     glutenfree: false,
@@ -250,7 +250,7 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: true,
   },
-  'confetti-"cup"-cake': {
+  'confetti-cup-cake': {
     title: 'Confetti "Cup" Cake',
     category: 'snack',
     glutenfree: false,
