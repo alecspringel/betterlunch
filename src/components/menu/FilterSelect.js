@@ -3,6 +3,7 @@ import Select from 'react-select';
 
 const options = [
   { value: null, label: 'All' },
+  { value: 'isNew', label: 'New', type: 'key' },
   { value: 'snack', label: 'Snacks', type: 'category' },
   { value: 'meal', label: 'Meals', type: 'category' },
   { value: 'vegetarian', label: 'Vegetarian', type: 'key' },
@@ -26,6 +27,8 @@ const styles = {
     '&:hover': { backgroundColor: state.isSelected ? '#f69353' : '#f693533d' },
     height: 35,
   }),
+  menuPortal: (provided) => ({ ...provided, zIndex: 3 }),
+  menu: (provided) => ({ ...provided, zIndex: 3 }),
 };
 
 const FilterSelect = ({ onChange, filter }) => (

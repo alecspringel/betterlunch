@@ -53,7 +53,7 @@ const Divider = styled.p`
 `;
 
 const XIcon = styled.img`
-  opacity: 0.3;
+  opacity: 0.2;
   height: 20px;
   margin-right: 12px;
   margin-top: 2px;

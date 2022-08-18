@@ -1,6 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
+import NewIcon from './NewIcon';
 
 const dietaryInfo = (data) => {
   if (data.vegetarian && data.glutenfree) {
@@ -18,6 +19,7 @@ function MenuItem({ image, data }) {
   const dietaryText = dietaryInfo(data);
   return (
     <Card>
+      {data?.isNew && <NewIcon />}
       <GatsbyImage
         image={fetchedImage}
         style={{
@@ -25,9 +27,9 @@ function MenuItem({ image, data }) {
         }}
       />
       <DescriptionDiv>
-        <p className="text-bold mont">
+        <p className="text-bold text-white mont">
           {data?.title}
-          {dietaryText && <span style={{ marginLeft: 5 }} className="text-bold text-orange inline-block">{dietaryText}</span>}
+          {dietaryText && <span style={{ marginLeft: 5, fontSize: 13 }} className="text-bold text-orange inline-block">{dietaryText}</span>}
         </p>
       </DescriptionDiv>
     </Card>
@@ -58,5 +60,15 @@ const Card = styled.article`
 
 const DescriptionDiv = styled.div`
   padding: 10px;
-  height: 56px;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient(0deg, #000000d1, transparent);
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 `;

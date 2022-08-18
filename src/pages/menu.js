@@ -27,7 +27,7 @@ export default Menu;
 
 export const pageQuery = graphql`
   query {
-    images: allFile(filter: { sourceInstanceName: { eq: "menu" } }) {
+    images: allFile(filter: { sourceInstanceName: { eq: "menu" } }, sort: { fields: [base] }) {
       edges {
         node {
           name
