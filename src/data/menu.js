@@ -1,28 +1,10 @@
 const MENU_DATA = {
-  'chicken-tenders-large': {
-    title: 'Chicken Tenders',
-    category: 'meal',
-    glutenfree: false,
-    vegetarian: false,
-    size: 'large',
-  },
-  'cookie-sandwich': {
-    title: 'Cookie Sandwich',
+  'apple-turnover': {
+    title: 'Apple Turnover',
     category: 'snack',
     glutenfree: false,
-    vegetarian: false,
-  },
-  'garden-salad': {
-    title: 'Garden Salad',
-    category: 'meal',
-    glutenfree: true,
     vegetarian: true,
-  },
-  'yogurt-fruit-bistro': {
-    title: 'Yogurt & Fruit Bistro Box',
-    category: 'meal',
-    glutenfree: true,
-    vegetarian: true,
+    isNew: true,
   },
   'apples-sunbutter': {
     title: 'Apples with Sunbutter',
@@ -36,17 +18,45 @@ const MENU_DATA = {
     glutenfree: true,
     vegetarian: false,
   },
+  'baked-chicken-taco': {
+    title: 'Baked Chicken Taco',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: false,
+    isNew: true,
+  },
   'bbq-chicken-corn': {
     title: 'BBQ Chicken and Corn',
     category: 'meal',
     glutenfree: false,
     vegetarian: false,
   },
+  'bbq-chicken-salad': {
+    title: 'BBQ Chicken Salad',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: false,
+    isNew: true,
+  },
   'bean-cheese-enchilada': {
     title: 'Bean and Cheese Enchiladas',
     category: 'meal',
     glutenfree: false,
     vegetarian: true,
+  },
+  'beef-chili-&-rice': {
+    title: 'Beef Chili & Rice',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: false,
+    isNew: true,
+  },
+  'beef-chili-&-roll': {
+    title: 'Beef Chili & Roll',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
   },
   'beef-teryaki': {
     title: 'Beef Teriyaki with Rice',
@@ -78,12 +88,26 @@ const MENU_DATA = {
     glutenfree: true,
     vegetarian: true,
   },
+  'charcuterie-bistro-box': {
+    title: 'Charcuterie Bistro Box',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
+  },
   'cheese-pizza-dippers-large': {
     title: 'Cheese Pizza Dippers Large',
     category: 'meal',
     glutenfree: false,
     vegetarian: true,
     size: 'large',
+  },
+  'cheesecake-+-blueberries': {
+    title: 'Cheesecake + Blueberries',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: true,
+    isNew: true,
   },
   'cheesy-bbq-chicken-sandwich': {
     title: 'Cheesy BBQ Chicken Sandwich',
@@ -103,17 +127,25 @@ const MENU_DATA = {
     glutenfree: true,
     vegetarian: false,
   },
+  'chefs-fried-noodles': {
+    title: 'Chefs Fried Noodles',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: true,
+    isNew: true,
+  },
   'cherry-chocolate-chip-cookie': {
     title: 'Cherry Chocolate Chip Cookie',
     category: 'snack',
     glutenfree: false,
     vegetarian: true,
   },
-  'chicken-parm-and-pasta': {
-    title: 'Chicken Parm and Pasta',
+  'chicken-adobe-&-rice': {
+    title: 'Chicken Adobe & Rice',
     category: 'meal',
-    glutenfree: false,
+    glutenfree: true,
     vegetarian: false,
+    isNew: true,
   },
   'chicken-caesar-wrap': {
     title: 'Chicken Caesar Wrap',
@@ -139,6 +171,26 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: false,
   },
+  'chicken-parm-and-pasta': {
+    title: 'Chicken Parm and Pasta',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+  },
+  'chicken-pizza-bake': {
+    title: 'Chicken Pizza Bake',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
+  },
+  'chicken-tenders-large': {
+    title: 'Chicken Tenders',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    size: 'large',
+  },
   'chicken-tenders-regular': {
     title: 'Chicken Tenders',
     category: 'meal',
@@ -159,11 +211,32 @@ const MENU_DATA = {
     glutenfree: true,
     vegetarian: false,
   },
+  'chicken-tetrazzini': {
+    title: 'Chicken Tetrazzini',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
+  },
   chili: {
     title: 'Chili',
     category: 'meal',
     glutenfree: false,
     vegetarian: false,
+  },
+  'choc-swirl-cheesecake': {
+    title: 'Choc Swirl Cheesecake',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: true,
+    isNew: true,
+  },
+  'chocolate-cup-cake': {
+    title: 'Chocolate "Cup" Cake',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: true,
+    isNew: true,
   },
   'chocolate-chip-cookie': {
     title: 'Chocolate Chip Cookie',
@@ -177,11 +250,37 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: true,
   },
+  'confetti-cup-cake': {
+    title: 'Confetti "Cup" Cake',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: true,
+    isNew: true,
+  },
+  'cookie-sandwich': {
+    title: 'Cookie Sandwich',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: false,
+  },
   'corn-and-potato-chowder': {
     title: 'Corn and Potato Chowder',
     category: 'meal',
     glutenfree: false,
     vegetarian: false,
+  },
+  'egg-ham-cheddar-puffs': {
+    title: 'Egg Ham Cheddar Puffs',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
+  },
+  'french-toast-bake': {
+    title: 'French Toast Bake',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: true,
   },
   'fruit-smoothie': {
     title: 'Fruit Smoothie',
@@ -189,10 +288,10 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: true,
   },
-  'french-toast-bake': {
-    title: 'French Toast Bake',
+  'garden-salad': {
+    title: 'Garden Salad',
     category: 'meal',
-    glutenfree: false,
+    glutenfree: true,
     vegetarian: true,
   },
   'garden-salad-with-chicken': {
@@ -206,6 +305,13 @@ const MENU_DATA = {
     category: 'meal',
     glutenfree: true,
     vegetarian: true,
+  },
+  'ham-and-cheddar-sandwich': {
+    title: 'Ham and Cheddar Sandwich',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
   },
   'ham-cheddar-bites': {
     title: 'Ham Cheddar Bites',
@@ -261,6 +367,20 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: false,
   },
+  'mini-chicken-tacos-+-rice': {
+    title: 'Mini Chicken Tacos + Rice',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: false,
+    isNew: true,
+  },
+  napolean: {
+    title: 'Napolean',
+    category: 'snack',
+    glutenfree: false,
+    vegetarian: true,
+    isNew: true,
+  },
   'not-your-lunch-lady-bar': {
     title: 'Not Your Lunch Lady Bar',
     category: 'meal',
@@ -284,6 +404,20 @@ const MENU_DATA = {
     category: 'meal',
     glutenfree: false,
     vegetarian: false,
+  },
+  'pepperoni-pizza-sliders': {
+    title: 'Pepperoni Pizza Sliders',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
+  },
+  'pepperoni-pizza-sliders-x2': {
+    title: 'Pepperoni Pizza Sliders x2',
+    category: 'meal',
+    glutenfree: false,
+    vegetarian: false,
+    isNew: true,
   },
   'pigs-in-blanket-with-baked-sp-fries': {
     title: 'Pigs in blanket with Baked SP Fries',
@@ -315,23 +449,30 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: false,
   },
-  'southwest-salad-with-chicken': {
-    title: 'Southwest Salad with Chicken',
-    category: 'meal',
-    glutenfree: true,
-    vegetarian: false,
-  },
   'snickerdoodle-cookie': {
     title: 'Snickerdoodle Cookie',
     category: 'snack',
     glutenfree: false,
     vegetarian: true,
   },
+  'southwest-salad-with-chicken': {
+    title: 'Southwest Salad with Chicken',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: false,
+  },
   'spaghetti-with-meatballs': {
     title: 'Spaghetti with Meatballs',
     category: 'meal',
     glutenfree: false,
     vegetarian: false,
+  },
+  'steak-fajita-bowl': {
+    title: 'Steak Fajita Bowl',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: false,
+    isNew: true,
   },
   'sweet-sour-meatballs-with-rice': {
     title: 'Sweet Sour Meatballs with Rice',
@@ -378,6 +519,12 @@ const MENU_DATA = {
     glutenfree: false,
     vegetarian: false,
     size: 'regular',
+  },
+  'yogurt-fruit-bistro': {
+    title: 'Yogurt & Fruit Bistro Box',
+    category: 'meal',
+    glutenfree: true,
+    vegetarian: true,
   },
   'yogurt-fruit-parfait': {
     title: 'Yogurt Fruit Parfait',
